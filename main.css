@@ -267,7 +267,7 @@ nav a{
 
 .img-landing{
     grid-area: img;
-    background-image: url(main-images/melb-museum-copyright-radam23.jpg);
+    background-image: url(images/melb-museum-copyright-radam23.jpg);
     background-size: cover;
     background-position: 50% 50%;
     filter: contrast(110%) brightness(95%);
@@ -333,7 +333,7 @@ nav a{
 
 .img-about{
     grid-area: img;
-    background-image: url(main-images/state-library-copyright-rAdam23.jpg);
+    background-image: url(images/state-library-copyright-rAdam23.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 20%;
@@ -349,7 +349,7 @@ nav a{
 
 .img-contact{
     grid-area: img;
-    background-image: url(main-images/state-library-copyright-rAdam23.jpg);
+    background-image: url(images/state-library-copyright-rAdam23.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 60%;
@@ -593,6 +593,8 @@ nav a{
 
     .menu-btn-mobile{
         display: flex;
+        justify-content: center;
+        align-items: center;
         right: 20px;
         z-index: 11;
         margin: 0px 0px 8px 0px;
@@ -603,16 +605,16 @@ nav a{
         border-color:65, 10, 36);
         text-decoration: none;
         color:rgb(65, 10, 36);
-        width: 70px;
-        justify-content: center;
-        align-items: center;
         font-size: .8rem;
         font-weight: 700;
+        width: 70px;
         visibility: visible;
     }
 
     .close-btn-mobile{
         display: flex;
+        justify-content: center;
+        align-items: center;
         right: 20px;
         z-index: 12;
         margin: 0px 0px 8px 0px;
@@ -623,11 +625,9 @@ nav a{
         border-color:65, 10, 36);
         text-decoration: none;
         color:rgb(65, 10, 36);
-        width: 70px;
-        justify-content: center;
-        align-items: center;
         font-size: .8rem;
         font-weight: 700;
+        width: 70px;
         visibility: hidden;
     } 
 
