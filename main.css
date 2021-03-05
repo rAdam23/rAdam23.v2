@@ -583,7 +583,6 @@ nav a{
     }
 
     .home-logo{
-        position: fixed;
         left:20px;
         top:22px;
     }
@@ -636,6 +635,10 @@ nav a{
         grid-area: nav-mobile;
         background-color: rgb(226, 216, 198);
         display: flex;
+        position: fixed;
+        top:0;
+        left: 0;
+        height: 70px;
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
