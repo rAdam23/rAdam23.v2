@@ -650,7 +650,6 @@ nav a{
         grid-area: cont-land-wel;
         display: flex;
         flex-direction: column;
-        overflow-y: scroll;
         padding: 20px 20px 20px 20px;
         justify-content: center;
         align-items: left;
@@ -660,7 +659,7 @@ nav a{
     .lrg-title-text-landing{
         font-family: 'Anton', sans-serif;
         font-weight: 100;
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         line-height: 1.5;
         letter-spacing: .8px;
         margin: 0px 0px 0px 0px;
@@ -672,7 +671,7 @@ nav a{
         font-weight: 400;
         line-height: 1.7;
         width: 90%;
-        margin: 10px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
     }
 
     .more-button{
@@ -689,6 +688,10 @@ nav a{
         text-decoration: none;
         margin: 30px 0px 0px 0px;
         border-radius: 3px;
+    }
+
+    .hide-btn{
+        display: none;
     }
 
     .reduce-margin-about-btn{
