@@ -1,0 +1,2230 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(226, 216, 198);
+}
+
+.page-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 475px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 9vh 1fr 11vh;
+    grid-template-areas: 
+    "nav-light   nav  nav  nav  nav"
+    "cont-land-wel img img img img"
+    "links         img img img img";
+}
+
+
+/*<-------- NAV -------------------------------------------------------->*/
+/*<-------- NAV -------------------------------------------------------->*/
+
+.nav-desktop{
+    grid-area: nav;
+    background-color: rgb(51, 14, 35);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.nav-desktop ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-desktop li{
+    padding: 0px 0px 0px 50px;
+}
+
+.nav-light{
+    grid-area: nav-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    z-index: 10;
+}
+
+.home-logo{
+    position: fixed;
+    left:30px;
+    top:24px;
+}
+
+.home-logo img{
+    height: 22px;
+}
+
+.close-btn-desktop{
+    display: flex;
+    position: fixed;
+    left: 370px;
+    z-index: 12;
+    padding: 9px 22px 9px 22px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(65, 10, 36);
+    text-decoration: none;
+    color:rgb(65, 10, 36);
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+.menu-btn-mobile,.close-btn-mobile{
+    display: none;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.menu-btn-desktop{
+    display: flex;
+    position: fixed;
+    left: 370px;
+    z-index: 11;
+    padding: 9px 22px 9px 22px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:65, 10, 36);
+    text-decoration: none;
+    color:rgb(65, 10, 36);
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 700;
+    visibility: visible;
+}
+
+.mobile-slider{
+    position: fixed;
+    display: flex;
+    top:10vh;
+    left:0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 475px;
+    height: 79vh;
+    background-color: rgb(226, 216, 198);
+    opacity: 0;
+    visibility:hidden;
+    z-index: 8;
+    transition: 320ms ease-in-out;
+}
+
+.mobile-slider ul{
+    display: flex;
+    top:10vh;
+    left:0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    padding: 0px 0px 50px 0px;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.mobile-slider a {
+    text-decoration: none;
+    color: rgb(129, 110, 119);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.mobile-slider a:hover{
+    color: rgb(105, 9, 60);
+}
+
+.bold-link a{
+    font-weight: 700;
+    color:rgb(105, 9, 60);
+    border-bottom: solid;
+    border-bottom-color:rgb(105, 9, 60);
+    border-bottom-width: 2px;
+}
+
+.nav-link{
+    height:38px;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+}
+
+.active-nav-link-text{
+    color: rgb(241, 235, 223);
+}
+
+.active-nav-link-underline{
+    border-bottom:rgba(187, 131, 142, 0.384);
+    border-bottom-style: solid;
+    margin: 0px 0px 0px 0px;
+    padding: 9px 0px 6px 0px;
+    border-bottom-width: 3px;
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(221, 212, 194);
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu-btn-desktop:hover, .close-btn-desktop:hover{
+    cursor: pointer;
+}
+
+
+
+/*--------- LANDING -WELCOME ------------------------------------------*/
+/*--------- LANDING -WELCOME ------------------------------------------*/
+
+
+.content-landing-welcome{
+    grid-area: cont-land-wel;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+    justify-content: top;
+    align-items: left;
+    height: 100%;
+}
+
+.content-landing-welcome-mobile{
+    display: none;
+}
+
+.lrg-title-text-landing{
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    letter-spacing: .8px;
+    margin: 30px 0px 0px 0px;
+}
+
+.sml-title-text-landing{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+}
+
+.max-width-wide{
+    max-width: 360px;
+}
+
+.more-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    width: fit-content;
+    background-color: black;
+    color: rgb(238, 234, 220);
+    font-size: .9rem;
+    font-family: 'Open Sans' sans-serif;
+    padding: 9px 13px 9px 13px;
+    text-decoration: none;
+    margin: 30px 0px 0px 0px;
+    border-radius: 3px;
+}
+
+.more-button:hover{
+    background-color: rgb(37, 37, 37);
+    transition:ease-in 70ms;
+}
+
+.img-landing{
+    grid-area: img;
+    background-image: url(main-images/melb-museum-copyright-radam23.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: contrast(110%) brightness(95%);
+    background-color: black;
+}
+
+
+
+/*--------- CONTACT & PORTFOLIO BOX ---------------------------------*/
+/*--------- CONTACT & PORTFOLIO BOX ---------------------------------*/
+
+.links{
+    grid-area: links;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(218, 206, 182);
+}
+
+.link-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    min-height: 70px;
+    color: rgb(238, 234, 220);
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.contact{
+    background-color: rgb(56, 14, 34);
+}
+
+.portfolio{
+    background-color: rgb(128, 108, 85);
+}
+
+.contact:hover{
+    background-color: rgb(49, 12, 29);
+    transition:ease-in 70ms;
+}
+
+.portfolio:hover{
+    background-color: rgb(112, 96, 78);
+    transition:ease-in 70ms;
+}
+
+.contact-icon{
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+/*--------- ABOUT PAGE ---------------------------------*/
+/*--------- ABOUT PAGE ---------------------------------*/
+
+
+.img-about{
+    grid-area: img;
+    background-image: url(main-images/state-library-copyright-rAdam23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 20%;
+    filter: saturate(95%) brightness(100%) hue-rotate(360deg) contrast(115%);
+    background-color: black;
+}
+
+
+
+/*--------- CONTACT PAGE ---------------------------------*/
+/*--------- CONTACT PAGE ---------------------------------*/
+
+
+.img-contact{
+    grid-area: img;
+    background-image: url(main-images/state-library-copyright-rAdam23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
+    filter: saturate(95%) brightness(100%) hue-rotate(360deg) contrast(115%);
+    background-color: black;
+}
+
+.social-link-buttons-container{
+    padding: 22px 0px 22px 0px;
+}
+
+.social-button-icon{
+    display: flex;
+    align-items: center;
+    height: 15px;
+    margin: 2px 10px 0px 0px;
+}
+
+.icon-larger{
+    height: 18px;
+    margin: 2px 10px 0px 0px;
+}
+
+.reduce-margin{
+    margin: 0px 0px 15px 0px;
+    padding: 20px 15px 20px 15px;
+}
+
+.contact-social-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    background-color: black;
+    padding: 11px 10px 11px 10px;
+    margin: 0px 0px 14px 0px;
+    border-radius: 3px;
+    color: rgb(238, 234, 220);
+    font-size: .9rem;
+    font-family: 'Open Sans' sans-serif;
+    text-decoration: none;
+}
+
+.contact-social-button:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+
+/*--------- MAX WIDTH 1024 ---------------------------------*/
+/*--------- MAX WIDTH 1024 ---------------------------------*/
+
+@media screen and (max-width:1024px){
+
+    .page-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 475px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 9vh 1fr 11vh;
+        grid-template-areas: 
+        "nav-light nav  nav  nav  nav"
+        "cont-land-wel img img img img"
+        "links         img img img img";
+    }
+    
+    .nav-1{
+        display: none;
+    }
+    
+    .nav-4{
+        display: none;
+    }
+
+    .home-logo{
+        position: fixed;
+        left:30px;
+        top:24px;
+    }
+
+    .home-logo img{
+        height: 22px;
+    }
+}
+
+
+/*--------- MAX WIDTH 831 PX ---------------------------------------------*/
+/*--------- MAX WIDTH 831 PX ---------------------------------------------*/
+
+@media screen and (max-width:831px){
+
+    .page-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vh 1fr 11vh;
+        grid-template-areas: 
+        "nav-mobile "
+        "cont-land-wel "
+        "links       ";
+    }
+    
+    .nav-1{
+        display: none;
+    }
+    
+    .nav-4{
+        display: none;
+    }
+
+    .home-logo{
+        position: fixed;
+        left:30px;
+        top:24px;
+    }
+
+    .home-logo img{
+        height: 22px;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-desktop ul{
+        display: none;
+    }
+
+    .nav-desktop li{
+        display: none;
+    }
+
+    .mobile-slider{
+        width: 100%;
+    }
+
+    .nav-mobile{
+        grid-area: nav-mobile;
+        background-color: rgb(226, 216, 198);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        padding: 10px 30px 10px 30px;
+    }
+    
+    .nav-mobile ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 120px 0px 0px;
+    }
+    
+    .nav-mobile li{
+        padding: 0px 0px 0px 50px;
+    }
+
+    .nav-mobile a {
+        color: rgb(65, 10, 36);
+        font-weight: 700;
+    }
+
+    .menu-btn-desktop, .close-btn-desktop{
+        display: none;
+    }
+
+    .close-btn-mobile{
+        display: flex;
+        position: fixed;
+        right: 30px;
+        z-index: 12;
+        padding: 9px 22px 9px 22px;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:65, 10, 36);
+        text-decoration: none;
+        color:rgb(65, 10, 36);
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        visibility: hidden;
+    }
+    
+    .menu-btn-mobile{
+        display: flex;
+        position: fixed;
+        right: 30px;
+        z-index: 11;
+        padding: 9px 22px 9px 22px;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:65, 10, 36);
+        text-decoration: none;
+        color:rgb(65, 10, 36);
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        visibility: visible;
+    }
+    
+}
+
+
+
+/*<==========  MAX-WIDTH 568PX  =========================>*/
+/*<==========  MAX-WIDTH 568PX  =========================>*/
+
+@media only screen and (max-width: 568px) {
+
+    .page-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr 11vh;
+        grid-template-areas: 
+        "nav-mobile "
+        "cont-land-wel "
+        "links       ";
+    }
+
+    .nav-link{
+        display: none;
+    }
+
+    .home-logo{
+        position: fixed;
+        left:20px;
+        top:22px;
+    }
+    
+    .home-logo img{
+        height: 20px;
+    }
+
+    .menu-btn-mobile{
+        display: flex;
+        position: fixed;
+        right: 20px;
+        z-index: 11;
+        margin: 0px 0px 8px 0px;
+        padding: 9px 22px 9px 22px;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:65, 10, 36);
+        text-decoration: none;
+        color:rgb(65, 10, 36);
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        visibility: visible;
+    }
+
+    .close-btn-mobile{
+        display: flex;
+        position: fixed;
+        right: 20px;
+        z-index: 12;
+        margin: 0px 0px 8px 0px;
+        padding: 9px 22px 9px 22px;
+        border-radius: 4px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:65, 10, 36);
+        text-decoration: none;
+        color:rgb(65, 10, 36);
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 700;
+        visibility: hidden;
+    } 
+
+    .nav-mobile{
+        grid-area: nav-mobile;
+        background-color: rgb(226, 216, 198);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .content-landing-welcome{
+        grid-area: cont-land-wel;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 20px 20px;
+        justify-content: top;
+        align-items: left;
+        height: 100%;
+    }
+
+    .lrg-title-text-landing{
+        font-family: 'Anton', sans-serif;
+        font-weight: 100;
+        font-size: 2.1rem;
+        line-height: 1.5;
+        letter-spacing: .8px;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .sml-title-text-landing{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.7;
+        width: 90%;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .more-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:36px;
+        width: fit-content;
+        background-color: black;
+        color: rgb(238, 234, 220);
+        font-size: .85rem;
+        font-family: 'Open Sans' sans-serif;
+        padding: 9px 12px 9px 12px;
+        text-decoration: none;
+        margin: 30px 0px 0px 0px;
+        border-radius: 3px;
+    }
+
+    .reduce-margin-about-btn{
+        margin: 0px 0px 0px 0px;
+    }
+
+    .social-link-buttons-container{
+        padding: 5px 0px 22px 0px;
+    }
+
+    .contact-social-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 155px;
+        background-color: black;
+        padding: 9px 12px 9px 12px;
+        margin: 0px 0px 14px 0px;
+        border-radius: 3px;
+        color: rgb(238, 234, 220);
+        font-size: .85rem;
+        font-family: 'Open Sans' sans-serif;
+        text-decoration: none;
+    }
+
+    .link-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        min-height: auto;
+        color: rgb(238, 234, 220);
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+    }
+
+    .mobile-slider{
+        position: fixed;
+        display: flex;
+        top:10vh;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 79vh;
+        background-color: rgb(226, 216, 198);
+        opacity: 0;
+        visibility:hidden;
+        z-index: 8;
+        transition: 320ms ease-in-out;
+    }
+
+    .mobile-slider ul{
+        display: flex;
+        top:10vh;
+        left:0;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mobile-text-hide{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- PORTFOLIO ---------------------------------*/
+/*--------- PORTFOLIO ---------------------------------*/
+
+/*--------- PORTFOLIO GRID ---------------------------------*/
+
+.page-grid-portfolio{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9vh auto auto auto auto auto auto;
+    grid-template-areas: 
+    "portfolio-nav"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "section5"
+    "section6"
+    "section7";
+    background-color: rgb(29, 16, 26);
+}
+
+/*--------- NAV ---------------------------------*/
+
+.return-home-btn{
+    border-radius: 5px;
+    border-color: rgb(240, 234, 226);
+    color: rgb(240, 234, 226);
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 10px 8px 10px;
+    min-width: 120px;
+}
+
+.nav-desktop-portfolio{
+    grid-area: portfolio-nav;
+    background-color: rgb(51, 14, 35);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.nav-desktop-portfolio ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-desktop-portfolio li{
+    padding: 0px 0px 0px 50px;
+}
+
+
+
+/*--------- PORTFOLIO TEXT & STYLES -----------------------*/
+
+.portfolio-pre-title{
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(94, 94, 94);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.portfolio-lrg-title{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+}
+.portfolio-text{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 15px 0 15px 0;
+}
+
+.portfolio-list{
+    margin: 15px 0 15px 0;
+}
+
+.portfolio-list li{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding: 0 0 0 1em;
+}
+
+.list-extra-margin{
+    margin: 0 0 15px 0;
+}
+
+/*--------- SECTION LAYOUTS ---------------------------------*/
+/*--------- SECTION LAYOUTS ---------------------------------*/
+
+
+/*--------- CONTAINER GLOBAL EDITS (MOBILE)------------------*/
+
+.text-container1{
+    grid-area: text-container1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 80px 30px 0px 30px;
+    background-color: rgb(245, 235, 218);
+}
+
+.text-container2{
+    grid-area: text-container2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0 30px 30px 30px;
+    background-color: rgb(245, 235, 218);
+}
+
+
+/*--------- SECTION 1 ------------------*/
+
+.section1{
+    margin-top: 20px;
+    height: 100vh;
+    grid-area: section1;
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "text-container1 section-1-img"
+    "text-container2 section-1-img";
+}
+
+        /*--------- CONTAINER EDITS ------------------*/
+        .add-padding-desktop{
+            padding: 80px 30px 30px 30px;
+        }
+
+        /*--------- IMAGES ------------------*/
+
+        .section-1-img{
+            grid-area: section-1-img;
+            background-size:190px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        .s1-walley{
+            background-image: url(images/walley-logo.svg);
+            background-color: rgb(65, 53, 48);
+        }
+
+        .s1-rmit{
+            background-image: url(images/rmit-logo.svg);
+            background-color: rgb(54, 36, 58);
+        }
+
+        .s1-radam23{
+            background-image: url(images/radam23-logo.svg);
+            background-color: rgb(58, 32, 45);
+        }
+
+
+/*--------- SECTION 2 ------------------*/
+
+.section2{
+    margin-top: 20px;
+    height: 100vh;
+    grid-area: section2;
+    display: grid;
+    grid-template-columns: 1fr .35fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "section-2-img text-container1"
+    "section-2-img text-container2";
+}
+
+        /*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+        .section-2-img{
+            grid-area: section-2-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .s2-walley{
+            background-image: url(images/melb-walkway-copyright-radam23.png);
+            background-position: 50% 50%;
+        }
+
+        .s2-rmit{
+            background-image: url(images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+
+        .s2-radam23{
+            background-image: url(images/nathan-dumlao-71u2fOofI-U-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+
+
+
+/*--------- SECTION 3 ------------------*/
+
+.section3{
+    margin-top: 20px;
+    height: 90vh;
+    grid-area: section3;
+    display: grid;
+    grid-template-columns: 1fr .35fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "section-3-img text-container1"
+    "section-3-img text-container2";
+}
+
+        /*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+        .section-3-img{
+            grid-area: section-3-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .s3-walley{
+            background-image: url(images/EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+            background-position: 50% 50%;
+        }
+
+        .s3-rmit{
+            background-image: url(images/annie-spratt-sggw4-qDD54-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+
+        .s3-radam23{
+            background-image: url(images/brooke-cagle-oTweoxMKdkA-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+
+
+/*--------- SECTION 4 ------------------*/
+
+.section4{
+    margin-top: 20px;
+    height: 100vh;
+    grid-area: section4;
+    display: grid;
+    grid-template-columns: 1fr .35fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "section-4-img text-container1"
+    "section-4-img text-container2";
+}
+
+        /*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+        .section-4-img{
+            grid-area: section-4-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:100%;
+            width: 100%;
+        }
+        
+        .s4-walley{
+            background-image: url(images/bantersnaps-5U_28ojjgms-unsplash.jpg);
+            background-position: 50% 50%;
+            background-color: rgb(24, 24, 24);
+        }
+        
+        .s4-rmit{
+            background-image: url(images/gabriele-ribeiro-1razH7iMbQo-unsplash.jpg);
+            background-position: 50% 65%;
+            background-color: rgb(24, 24, 24);
+        }
+        
+        .s4-radam23{
+            background-image: url(images/radam23-moodboard.png);
+            background-position: 50% 50%;
+            background-size:90%;
+            background-color: rgb(54, 26, 46);
+        }
+
+
+/*--------- SECTION 5 ------------------*/
+
+.section5{
+    margin-top: 20px;
+    height: auto;
+    min-height: 90vh;
+    grid-area: section5;
+    display: grid;
+    grid-template-columns: 1fr .35fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "section-5-img text-container1"
+    "section-5-img text-container2";
+}
+
+/*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+        .section-5-img{
+            grid-area: section-5-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:100%;
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+        
+        .s5-walley{
+            background-image: url(images/robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+        .s5-rmit{
+            background-image: url(images/israel-andrade-YI_9SivVt_s-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+        .s5-radam23{
+            background-image: url(images/joshua-newton-egK73XCwN8I-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+
+/*--------- SECTION 6 ------------------*/
+
+.section6{
+    margin-top: 20px;
+    height: auto;
+    min-height: 90vh;
+    grid-area: section6;
+    display: grid;
+    grid-template-columns: 1fr .35fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "section-6-img text-container1"
+    "section-6-img text-container2";
+}
+
+/*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+
+        .section-6-img{
+            grid-area: section-6-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:100%;
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+        
+        .s6-walley{
+            background-image: url(images/cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+        .s6-rmit{
+            background-image: url(images/brooke-cagle-NoRsyXmHGpI-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+        .s6-radam23{
+            background-image: url(images/markus-spiske-hvSr_CVecVI-unsplash.jpg);
+            background-position: 50% 50%;
+        }
+        
+
+
+/*--------- SECTION 7 ------------------*/
+
+.section7{
+    margin-top: 20px;
+    height: 90vh;
+    grid-area: section7;
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-rows:.5fr 1fr;
+    grid-template-areas: 
+    "text-container1 section-7-img"
+    "text-container2 section-7-img";
+}
+
+/*--------- CONTAINER EDITS ------------------*/
+
+
+        /*--------- IMAGES ------------------*/
+
+        .section-7-img{
+            grid-area: section-7-img;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:100%;
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .s7-walley{
+            background-image: url(images/Walleybanque\ App.png);
+            background-position: 50% 50%;
+            background-size:100%;
+            background-color: rgb(66, 56, 49);
+        }
+
+        .s7-rmit{
+            background-image: url(images/final\ prototype\ edit\ for\ upload.png);
+            background-position: 50% 50%;
+            background-size:75%;
+            background-color: rgb(53, 31, 50);
+        }
+
+        .s7-radam23{
+            background-image: url(images/radam23-website-screenshot-copyright-radam23.png);
+            background-position: 50% 50%;
+            background-size:90%;
+            background-color: rgb(53, 31, 50);
+        }
+
+
+/*<==========  TABLET RESPONSIVE  =========================>*/
+/*<==========  TABLET RESPONSIVE  =========================>*/
+
+@media only screen and (max-width: 1024px) {
+
+.portfolio-off{
+    display: none;
+}
+
+
+
+/*--------- CONTAINER GLOBAL EDITS (MOBILE)------------------*/
+
+.text-container1{
+    padding: 50px 30px 0px 30px;
+}
+
+/*<------ SECTION 1 (MOBILE)  ------------>*/
+
+.section1{
+    height: auto;
+    grid-area: section1;
+    grid-template-columns: 1fr;
+    grid-template-rows:100vh auto auto;
+    grid-template-areas: 
+    "section-1-img"
+    "text-container1"
+    "text-container2";
+}
+
+        .add-padding-mobile{
+            padding: 50px 30px 30px 30px;
+        }
+
+/*<------ SECTION 2 (MOBILE)  ------------>*/
+
+.section2{
+    height: auto;
+    grid-area: section2;
+    grid-template-columns: 1fr;
+    grid-template-rows:100vh auto auto;
+    grid-template-areas: 
+    "section-2-img"
+    "text-container1"
+    "text-container2";
+}
+        /*--------- CONTAINER EDITS ------------------*/
+
+
+/*<------ SECTION 3 (MOBILE)  ------------>*/
+
+    .section3{
+        height: auto;
+        grid-area: section3;
+        grid-template-columns: 1fr;
+        grid-template-rows:90vh auto auto;
+        grid-template-areas: 
+        "section-3-img"
+        "text-container1"
+        "text-container2";
+    }
+        /*--------- CONTAINER EDITS ------------------*/
+
+/*<------ SECTION 4 (MOBILE)  ------------>*/
+
+    .section4{
+        height: auto;
+        grid-area: section4;
+        grid-template-columns: 1fr;
+        grid-template-rows:90vh auto auto;
+        grid-template-areas: 
+        "section-4-img"
+        "text-container1"
+        "text-container2";
+    }
+
+    .section5{
+        height: auto;
+        grid-area: section5;
+        grid-template-columns: 1fr;
+        grid-template-rows:80vh auto auto;
+        grid-template-areas: 
+        "section-5-img"
+        "text-container1"
+        "text-container2";
+    }
+    
+    .section6{
+        height: auto;
+        grid-area: section6;
+        grid-template-columns: 1fr;
+        grid-template-rows:80vh auto auto;
+        grid-template-areas: 
+        "section-6-img"
+        "text-container1"
+        "text-container2";
+    }
+
+    .section7{
+        height: auto;
+        grid-area: section7;
+        grid-template-columns: 1fr;
+        grid-template-rows:80vh auto auto;
+        grid-template-areas: 
+        "section-7-img"
+        "text-container1"
+        "text-container2";
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<----------- PORTFOLIO PAGE --------------------------------->
+/*<----------- PORTFOLIO PAGE --------------------------------->
+/*<----------- PORTFOLIO PAGE --------------------------------->
+
+.landing-grid{
+    height: 43vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: 10vh 1fr 50px;
+    grid-template-areas: 
+    "nav-logo  nav-logo  nav  nav nav nav"
+    "banner banner banner banner banner banner "
+}
+
+/*<----------- SECTION 1 --------------------------------->
+
+.section-1-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-1-img section-1-img section-1-img section-1-img landing-text landing-text ";
+    margin-bottom: 50px;
+}
+
+.section-1-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(80, 64, 54);
+    background-image: url(images/walley-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 47%;
+    background-size: 230px;
+    height: 100%;
+}
+
+.section-1-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(104, 67, 80);
+    background-image: url(images/rmit-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 47%;
+    background-size: 230px;
+    height: 100%;
+}
+
+.section-1-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(61, 34, 55);
+    background-image: url(images/radam23-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 47%;
+    background-size: 230px;
+    height: 100%;
+}
+/*<----------- SECTION 3 --------------------------------->
+
+.section-3-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "landing-text landing-text section-1-img section-1-img section-1-img section-1-img ";
+    margin-bottom: 50px;
+}
+
+.section-3-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/melb-walkway-copyright-radam23.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.section-3-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.section-3-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/nathan-dumlao-71u2fOofI-U-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/*<----------- SECTION 4 --------------------------------->
+
+.section-4-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+    "landing-text landing-text section-1-img section-1-img section-1-img section-1-img ";
+    margin-bottom: 50px;
+}
+
+.section-4-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.section-4-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/annie-spratt-sggw4-qDD54-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.section-4-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/brooke-cagle-oTweoxMKdkA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+/*<----------- SECTION 5 --------------------------------->
+
+.section-5-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-5-img section-5-img section-5-img section-5-img landing-text landing-text ";
+    margin-bottom: 50px;
+}
+
+.section-5-img-walley{
+    grid-area: section-5-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/gabriele-ribeiro-1razH7iMbQo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+}
+
+.section-5-img-rmit{
+    grid-area: section-5-img;
+    background-color: rgb(189, 174, 158);
+    background-image: url(images/gabriele-ribeiro-1razH7iMbQo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+}
+
+.section-5-img-radam{
+    grid-area: section-5-img;
+    background-color: rgb(99, 72, 85);
+    background-image: url(images/radam\ moodboard/radam23-moodboard.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 95%;
+}
+
+
+
+/*<----------- SECTION 6 --------------------------------->
+
+.section-6-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "landing-text landing-text section-1-img section-1-img section-1-img section-1-img ";
+    margin-bottom: 50px;
+}
+
+.section-6-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.section-6-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/israel-andrade-YI_9SivVt_s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    background-size: cover;
+}
+
+.section-6-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/joshua-newton-egK73XCwN8I-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+
+/*<----------- SECTION 7 --------------------------------->
+
+.section-7-grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "landing-text landing-text section-1-img section-1-img section-1-img section-1-img ";
+    margin-bottom: 50px;
+}
+
+.section-7-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.section-7-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/brooke-cagle-NoRsyXmHGpI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+.section-7-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(146, 110, 134);
+    background-image: url(images/markus-spiske-hvSr_CVecVI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+
+
+/*<----------- SECTION 8 --------------------------------->
+
+.section-8-grid{
+    height: auto;
+    display: grid;
+    grid-template-columns:  .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "landing-text landing-text section-1-img section-1-img section-1-img section-1-img ";
+    margin-bottom: 50px;
+}
+
+.section-8-img-walley{
+    grid-area: section-1-img;
+    background-color: rgb(22, 10, 18);
+    background-image: url(images/Walleybanque\ App.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+.section-8-img-rmit{
+    grid-area: section-1-img;
+    background-color: rgb(22, 10, 18);
+    background-image: url(images/final\ prototype\ edit\ for\ upload.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+
+.section-8-img-radam{
+    grid-area: section-1-img;
+    background-color: rgb(22, 10, 18);
+    background-image: url(images/radam23-website-screenshot.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+
+/*<----------- PORTFOLIO NAV LOGO SETTINGS ----------------------------->
+
+.dark-bg{
+    background-color: rgb(53, 26, 44);
+}
+
+.logo-dark{
+    font-family: 'Courgette', cursive;
+    font-weight: 700;
+    font-size: 1.55rem;
+    letter-spacing: 0px;
+    color:blanchedalmond;
+}
+
+.portfolio-nav-underline{
+    margin-top: 6px;
+    padding-bottom: 4px;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: blanchedalmond;
+}
+
+.reduce-margin{
+    margin-top: 5px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.text-container-padding{
+    padding: 60px 40px 60px 40px;
+}
+
+.walley-banner{
+    grid-area: banner;
+    display: flex;
+    padding: 0px 40px 0px 40px; 
+    align-items: center;
+    background-color: rgb(230, 215, 197);
+}
+
+.walley-banner li{
+    height: 100%;
+}
+
+.walley-banner li{
+    list-style: none; 
+}
+
+.extra-space{
+    margin-top: 40px;
+}
+
+/*<--------------  MAX-WIDTH: 1024 -------------------->
+
+@media screen and (max-width:1024px){
+
+
+    /*<-------------- HOME PAGE  -------------------->
+
+        .home-grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: .7fr .7fr 1fr 1fr;
+            grid-template-rows: 10vh 1fr 1fr .30fr;
+            grid-template-areas: 
+            "nav-logo     nav-logo     nav     nav "
+            "landing-text landing-text  landing-img landing-img"
+            "landing-text landing-text  landing-img landing-img"
+            "contact      portfolio     landing-img landing-img";
+        }
+
+
+        .landing-text-container{
+            grid-area: landing-text;
+            margin: 0px 0px 0px 0px;
+            padding: 40px 40px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(230, 215, 197);
+        }
+
+
+        h1{
+            display: block;
+            font-size:2.9rem;
+            padding: 20px 0px 30px 0px;
+        }
+
+
+        h2{
+            font-size:2.3rem;
+        }
+
+        h3{
+            font-size:1.85rem;
+            padding: 10px 0px 10px 0px;
+        }
+        
+
+        p{
+            font-size: 1.1rem;
+            padding: 0px 0px 0px 0px;
+            max-width: 330px;
+            width: 90%;
+        }
+
+        .more-button a{
+            margin-top: 20px;
+            padding: 6px 4px 6px 4px;
+            width: 140px;
+            font-size: 1rem;
+        }
+
+        .contact-box div{
+            font-size:1.1rem;
+        }
+
+        .portfolio-box div{
+            font-size:1.1rem;
+        }
+
+        .nav-box{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-box ul{
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px 40px 0px 0px;       
+         }
+
+        .nav-box li{
+            list-style: none;
+            border-bottom:solid;
+            border-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+            padding: 0px 0px 0px 40px;
+        }
+
+        .portfolio-text{
+            font-size:1.1rem;
+            margin-top:15px;
+        }
+
+        .reduce-margin{
+            margin-top: 5px;
+            line-height: 1.7;
+            width: 100%;
+        }
+        
+        .landing-img{
+            background-size: cover;
+            background-position: 47% 70%;
+        }
+
+/*<-------------- 1024 WALLEY PAGE  -------------------->
+
+        .section-7-img-walley{
+            background-position: 40% 100%;
+        }
+
+/*<-------------- 1024 RMIT PAGE  -------------------->
+
+        .section-3-img-rmit{
+            background-position: 85% 30%;
+        }
+
+        .section-4-img-rmit{
+            background-position: 0% 50%;
+        }
+
+        .section-7-img-rmit{
+            background-position: 70% 50%;
+        }
+
+
+/*<-------------- 1024 RADAM PAGE  -------------------->
+
+        .section-8-img-radam{
+            background-position: 50% 50%;
+            background-size: 90%;
+        }
+
+
+
+}
+
+
+
+
+
+/*<--------------  MAX-WIDTH: 768 -------------------->
+
+@media screen and (max-width:768px){
+
+
+    /*<-------------- HOME PAGE  -------------------->
+
+        .home-grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: .85fr .85fr 1fr 1fr;
+            grid-template-rows: 10vh 1fr 1fr .30fr;
+            grid-template-areas: 
+            "nav-logo     nav-logo     nav     nav "
+            "landing-text landing-text  landing-img landing-img"
+            "landing-text landing-text  landing-img landing-img"
+            "contact      portfolio     landing-img landing-img";
+        }
+
+
+        h1{
+            display: block;
+            font-size:2.6rem;
+            padding: 20px 0px 30px 0px;
+        }
+
+
+        h2{
+            font-size:2.1rem;
+        }
+
+        h3{
+            font-size:1.75rem;
+        }
+        
+        h5{
+            font-size:.9rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            padding: 0px 0px 0px 0px;
+            max-width: 330px;
+            width: 90%;
+        }
+
+        .more-button a{
+            margin-top: 25px;
+            padding: 6px 4px 6px 4px;
+            width: 140px;
+            font-size: .9rem;
+        }
+
+        .contact-box div{
+            font-size:1.1rem;
+        }
+
+        .portfolio-box div{
+            font-size:1.1rem;
+        }
+
+        .nav-box {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px 30px 0px 0px;
+            width: 100%;
+         }
+
+        .nav-box ul{
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px 30px 0px 0px; 
+         }
+         
+         .nav-box li{
+            padding: 0px 0px 0px 20px;
+         }
+
+        .portfolio-text{
+            font-size:1.1rem;
+            margin-top:0px;
+            width: 80%;
+        }
+
+        .reduce-margin{
+            margin-top: 5px;
+            line-height: 1.5;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .margin-top{
+            margin-top: 0px;
+        }
+
+        .landing-text-container ul{
+            display: block;
+        }
+
+        .landing-text-container li{
+            padding: 0px 0px 10px 0px;
+            width:100%;
+        }
+
+        .portfolio-text-list{
+            font-size:1.1rem;
+            margin: 0px 0px 0px 0px;
+            text-indent: -1.35em;
+            padding-left: 1rem;
+            line-height: 1.8;
+        }
+
+                
+        .mobile-col1{
+            width: 50%;
+        }
+
+        .mobile-col2{
+            padding-left: 30px;
+            width: 50%;
+        }
+
+        .walley-banner{
+            height: 150px;
+        }
+
+      
+
+        
+    /*<-------------- PORTFOLIO PAGE  -------------------->
+
+        .landing-grid{
+            height: auto;
+            display: grid;
+            grid-template-columns:  .5fr .5fr .5fr .5fr;
+            grid-template-rows: 10vh 1fr 50px;
+            grid-template-areas: 
+            "nav-logo   nav  nav nav "
+            "banner banner banner banner "
+        }
+
+        .landing-text-container{
+            grid-area: landing-text;
+            margin: 0px 0px 0px 0px;
+            padding: 40px 40px 40px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;            
+            background-color: rgb(230, 215, 197);
+            width: 100%;
+        }
+
+        .section-1-grid, .section-3-grid, .section-4-grid, .section-5-grid, .section-6-grid, .section-7-grid, .section-8-grid{
+            height: auto;
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-template-rows: 80vh 1fr;
+            grid-template-areas: 
+            "section-1-img section-1-img"
+            "landing-text landing-text ";
+            margin-bottom: 50px;
+        }
+
+    
+}
+
+
+
+
+
+/*<--------------  MAX-WIDTH: 600 -------------------->
+
+@media screen and (max-width:667px){
+
+
+    /*<-------------- HOME PAGE  -------------------->
+
+        .home-grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 10vh 1fr 1fr .32fr;
+            grid-template-areas: 
+            "nav-logo  nav-logo"
+            "landing-text landing-text"
+            "landing-text landing-text"
+            "contact       portfolio ";
+        }
+
+        .home-text-container{
+            padding: 20px 30px 30px 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-logo{
+            padding: 10px 30px 10px 30px; 
+        }
+
+
+        .logo{
+            font-size: 1.4rem;
+        }
+
+        .landing-img{
+            display: none;
+        }
+
+        h1{
+            display: block;
+            font-size:6vh;
+            padding: 0px 0px 3vh 0px;
+            width: 90%;
+            max-width: 240px;
+        }
+
+        h2{
+            font-size:1.7rem;
+        }
+
+        h3{
+            font-size:1.75rem;
+        }
+        
+        h5{
+            font-size:.9rem;
+        }
+
+        p{
+            font-size: 2.6vh;
+        }
+
+
+        .more-button a{
+            margin-top: 2vh;
+            padding: 6px 4px 6px 4px;
+            width: 140px;
+            font-size: 2.2vh;
+        }
+
+        .contact-box div{
+            font-size:2.3vh;
+        }
+
+        .portfolio-box div{
+            font-size:2.3vh;
+        }
+
+      
+        .nav-box{
+            display: none;
+        }
+
+        .nav-box ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 40px 0px 0px; 
+            width: 100%;      
+         }
+
+        .nav-box li{
+            list-style: none;
+            border-bottom:solid;
+            border-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .portfolio-text{
+            font-size:1.1rem;
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+        }
+        .portfolio-text li{
+            width: 100%;
+        }
+
+        .reduce-margin{
+            line-height: 1.5;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .margin-top{
+            margin-top: 0px;
+        }
+
+        .landing-text-container ul{
+            display: block
+        }
+
+        .landing-text-container li{
+            padding: 0px 0px 0px 0px;
+        }
+
+        .walley-banner{
+            grid-area: banner;
+            display: flex;
+            padding: 20px 30px 20px 30px; 
+            align-items: center;
+            background-color: rgb(230, 215, 197);
+        }
+
+       .extra-space{
+           margin-top: 120px;
+       }
+
+
+    /*<-------------- PORTFOLIO PAGE  -------------------->
+
+        .landing-grid{
+            height: auto;
+            display: grid;
+            grid-template-columns:  .5fr .5fr .5fr .5fr;
+            grid-template-rows: 10vh auto 50px;
+            grid-template-areas: 
+            "nav-logo  nav nav nav"
+            "banner banner banner banner "
+        }
+
+        .landing-text-container{
+            grid-area: landing-text;
+            margin: 0px 0px 0px 0px;
+            padding: 40px 40px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;            
+            background-color: rgb(230, 215, 197);
+            width: 100%;
+        }
+
+        .section-1-grid, .section-3-grid, .section-4-grid, .section-5-grid, .section-6-grid, .section-7-grid, .section-8-grid{
+            height: auto;
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-template-rows: 80vh 1fr;
+            grid-template-areas: 
+            "section-1-img"
+            "landing-text";
+            margin-bottom: 20px;
+        }
+
+    
+}
+
+    
+
+
+
+
+    
