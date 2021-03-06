@@ -502,7 +502,7 @@ nav a{
         width: 100%;
         justify-content: flex-end;
         align-items: center;
-        padding: 0px 120px 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
     
     .nav-mobile li{
@@ -585,6 +585,8 @@ nav a{
     .home-logo{
         left:20px;
         top:22px;
+        position: sticky;
+        width: 75%;
     }
     
     .home-logo img{
@@ -593,9 +595,9 @@ nav a{
 
     .menu-btn-mobile{
         display: flex;
+        position:sticky;
         justify-content: center;
         align-items: center;
-        right: 20px;
         z-index: 11;
         margin: 0px 0px 0px 0px;
         padding: 9px 22px 9px 22px;
@@ -613,6 +615,7 @@ nav a{
 
     .close-btn-mobile{
         display: flex;
+        position:sticky;
         justify-content: center;
         align-items: center;
         right: 20px;
@@ -635,14 +638,22 @@ nav a{
         grid-area: nav-mobile;
         background-color: rgb(226, 216, 198);
         display: flex;
-        top:.01fr;
-        left: 0;
         height: 60px;
+        width: 100%;
         flex-direction: row;
         justify-content: flex-end;
-        width: 100%;
         align-items: center;
         padding: 0px 10px 0px 10px;
+    }
+
+    .nav-mobile ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 25%;
+        justify-content: right;
+        align-items: center;
+        padding: 0px 0px 0px 0px;
     }
 
     .content-landing-welcome{
@@ -650,7 +661,7 @@ nav a{
         display: flex;
         flex-direction: column;
         padding: 60px 20px 20px 20px;
-        justify-content: top;
+        justify-content: space-between;
         align-items: left;
         height: 100%;;
     }
