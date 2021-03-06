@@ -635,7 +635,7 @@ nav a{
         grid-area: nav-mobile;
         background-color: rgb(226, 216, 198);
         display: flex;
-        position: fixed;
+        position: static;
         top:0;
         left: 0;
         height: 60px;
