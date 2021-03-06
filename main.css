@@ -724,6 +724,8 @@ nav a{
         display: flex;
         flex-direction: row;
         background-color: rgb(218, 206, 182);
+        position: fixed;
+        bottom: 0;
     }
 
     .link-box{
