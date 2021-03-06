@@ -724,7 +724,7 @@ nav a{
         display: flex;
         flex-direction: row;
         background-color: rgb(218, 206, 182);
-        position: fixed;
+        position: absolute;
         bottom: 0;
     }
 
