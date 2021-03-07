@@ -28,84 +28,90 @@
     <title>rAdam23</title>
 </head>
 
-
 <body>
 
+<section class="main-grid">
 
-<!------------------ NAV  ---------------------------------------------------------->
 
-<section class="page-grid">
+<!-------------------    NAV   ------------------------------------------------>
 
-    <nav class="nav-desktop">
-        <a href="index.html" class="home-logo"><img src="images/rAdam23-logo-dark.png"></a>
-        <ul>
-            <li class="nav-link nav-1"><a href="index.html" class="active-nav-link-underline">Home</a></li>
-            <li class="nav-link nav-2"><a href="about.html">About me</a></li>
-            <li class="nav-link nav-3"><a href="index.html">rAdam23 Art</a></li>
-            <li class="nav-link nav-4"><a href="contact.html">Contact</a></li>
-            <a href="#" id="btnMenuDesktop" class="menu-btn-desktop" onclick="openNav()">Menu</a>
-            <a href="#" id="btnCloseDesktop" class="close-btn-desktop" onclick="closeNav()">Close</a>
-        </ul>
-    </nav>
+<nav>
+    <a href="index.html"><img src="images/logo.png" class="nav-logo"></a>
+</nav>
 
-    <nav class="nav-mobile">
-        <a href="index.html" class="home-logo"><img src="images/rAdam23-logo-dark.png" ></a>
-        <ul>
-            <li class="nav-link nav-1"><a href="index.html" class="active-nav-link-underline">Home</a></li>
-            <li class="nav-link nav-2"><a href="about.html">About me</a></li>
-            <li class="nav-link nav-3"><a href="index.html">rAdam23 Art</a></li>
-            <li class="nav-link nav-4"><a href="contact.html">Contact</a></li>
-            <a href="#" id="btnMenuMobile" class="menu-btn-mobile" onclick="openNav()">Menu</a>
-            <a href="#" id="btnCloseMobile" class="close-btn-mobile" onclick="closeNav()">Close</a>
-        </ul>
-    </nav>
-    
-    <div id="mobileSlider" class="mobile-slider">
-        <ul>
-            <li class="bold-link"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="walleybanque.html">Walleybanque</a></li>
-            <li><a href="rmit.html">RMIT</a></li>
-            <li><a href="radam23.html">rAdam23</a></li>
-            <li><a href="#">rAdam23 Art</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
 
-   
-
-<!------------------ LANDING - WELCOME ------------------------------------------------>
-
-<div class="content-landing-welcome">
-
-    <h1 class="lrg-title-text-landing">Full Stack<br>Web Designer<br>Melbourne.</h1>
-
-    <p class="sml-title-text-landing">A Melbourne-based full stack web designer, who creates websites and loves to create amazing custom UX/UI experiences.</p>
-
-    <p class="sml-title-text-landing-mobile">A Melbourne-based full stack web designer, I love creating beautiful websites and amazing custom UX/UI experiences.</p>
-
-    <a href="about.html" class="more-button">Find out more &#8594;</a>
-    <a href="about.html" class="more-button-mobile">Find out more &#8594;</a>
-
+<div class="nav-link-bar">
+    <ul>
+        <li><a href="index.html" class="active-nav-link">Home</a></li>
+        <li><a href="walleybanque.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </div>
 
-<div class="img-landing"></div>
+<!-------------------   MOBILE NAV   ------------------------------------------>
+
+<div class="mobile-nav-links">
+    <a href="walleybanque.html" class="portfolio-nav-btn">Portfolio &#x2192;</a>
+    <ul>
+        <li><a href="index.html" class="active-nav-link">Home</a></li>
+        <li><a href="walleybanque.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
 
 
-<!------------------ LANDING - CONTACT & PORTFOLIO ------------------------------------->
+<!-------------------   CONTENT PANEL   --------------------------------------->
 
-<div class="links">
+<div class="main-panel">
 
-    <a href="contact.html" class="link-box contact"><img src="images/phone-icon.svg" class="contact-icon">Contact me</a>
+    <div class="main-content-container">
 
-    <a href="walleybanque.html" class="link-box portfolio">My Portfolio</a>
+        <h1 class="lrg-text-heading">Full Stack<br>Web Designer<br>Melbourne.</h1>
+        <h2 class="sml-text-heading">A Melbourne-based full stack web designer, who creates websites and loves to create amazing custom UX/UI experiences.</h2>
+        <div class="page-button">Find out more</div>
 
+    </div>
+</div>
+
+
+<ul class="links">
+    <li class="contact-btn"><a href="contact.html">contact</a></li>
+    <li class="portfolio-btn"><a href="walleybanque.html">portfolio</a></li>
+</ul>
+
+
+<div class="body-img"></div>
+
+
+<!-------------------   MOBILE ABOUT ME PANEL   ------------------------------->
+
+<div class="about-panel">
+
+    <div class="about-content-container">
+
+        <h1 class="lrg-text-heading about-text">About me</h1>
+        <h2 class="sml-text-heading about-text">I like to create websites that are fully customised, designed and coded end-to-end using semantic code & best practices.</h2>
+        <div class="about-button">Find out more</div>
+    </div>
+</div>
+
+<!-------------------   CONTACT PANEL   --------------------------------------->
+
+<div class="contact-panel">
+
+    <div class="contact-content-container">
+
+        <h1 class="lrg-text-heading">Contact me</h1>
+        <h2 class="sml-text-heading">I'm always eager to discuss new projects and ideas from entrepeneurs, startups or mature businesses. Contact me today to see how I can help you with a custom website, user experience or design solution.</h2>
+        <div class="page-button contact-btn-width"><img src="images/twitter-icon.svg" class="twitter-icon">Send a tweet</div>
+        <div class="page-button reduce-margin contact-btn-width"><img src="images/facebook-icon.svg" class="facebook-icon">Let's be friends</div>
+        <div class="page-button reduce-margin contact-btn-width"><img src="images/mail-icon.svg" class="mail-icon">Email me</div>
+
+    </div>
 </div>
 
 </section>
 
 </body>
-<script src="main.js"></script>
+
 </html>
-
-
