@@ -695,6 +695,7 @@ nav a{
     }
 
     .sml-title-text-landing-mobile{
+        display: flex;
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
