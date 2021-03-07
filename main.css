@@ -451,20 +451,17 @@ nav a{
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh 1fr 11vh;
+        grid-template-rows: 9vh 80vh 11vh;
         grid-template-areas: 
         "nav-mobile "
         "cont-land-wel "
         "links       ";
     }
     
-    .nav-1{
-        display: none;
-    }
-    
     .nav-4{
         display: none;
     }
+
 
     .home-logo{
         position: fixed;
@@ -510,7 +507,7 @@ nav a{
         width: 100%;
         justify-content: flex-end;
         align-items: center;
-        padding: 0px 0px 0px 0px;
+        padding: 0px 120px 0px 0px;
     }
     
     .nav-mobile li{
@@ -576,10 +573,10 @@ nav a{
 @media only screen and (max-width: 568px) {
 
     .page-grid{
-        height: auto;
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-rows: 1fr 9fr 1fr;
         grid-template-areas: 
         "nav-mobile "
         "cont-land-wel"
@@ -596,15 +593,13 @@ nav a{
         background-color: rgb(226, 216, 198);
         display: flex;
         position: static;
-        top: 0vh;
-        left: 0;
         z-index: 7;
         width: 100%;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         padding: 0px 20px;
-        height: 100%;
+        height: 70px;
     }
     
     .nav-mobile ul{
@@ -626,43 +621,28 @@ nav a{
         font-weight: 700;
     }
 
-    .mobile-slider{
-        position: fixed;
-        display: flex;
-        top:10vh;
-        left:0;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: 80vh;
-        background-color: rgb(226, 216, 198);
-        opacity: 0;
-        visibility:hidden;
-        z-index: 6;
-        transition: 320ms ease-in-out;
-    }
-
     /*<=======  HOME LOGO MENU BTNS  ================================>*/
     .home-logo{
-        position: static;
+        position: fixed;
+        left: 20px;
         width: fit-content;
+        margin: 0px 0px 0px 0px;
     }
     
     .close-btn-mobile{
         display: flex;
-        position: absolute;
-        top:10px;
+        position: fixed;
         right: 20px;
+        margin: 12px 0px 0px 0px;
+        width: 68px;
         z-index: 12;
-        padding: 9px 22px 9px 22px;
+        padding: 9px;
         border-radius: 4px;
         border-width: 2px;
         border-style: solid;
         border-color:65, 10, 36);
         text-decoration: none;
         color:rgb(65, 10, 36);
-        width: 80px;
         justify-content: center;
         align-items: center;
         font-size: .8rem;
@@ -672,23 +652,41 @@ nav a{
     
     .menu-btn-mobile{
         display: flex;
-        position: absolute;
-        top:10px;
+        position: fixed;
         right: 20px;
+        margin: 12px 0px 0px 0px;
+        width: 68px;
         z-index: 11;
-        padding: 9px 22px 9px 22px;
+        padding: 9px;
         border-radius: 4px;
         border-width: 2px;
         border-style: solid;
         border-color:65, 10, 36);
         text-decoration: none;
         color:rgb(65, 10, 36);
-        width: 80px;
         justify-content: center;
         align-items: center;
         font-size: .8rem;
         font-weight: 700;
         visibility: visible;
+    }
+    
+
+    .mobile-slider{
+        position: fixed;
+        display: flex;
+        top:10vh;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(226, 216, 198);
+        opacity: 0;
+        visibility:hidden;
+        z-index: 6;
+        transition: 320ms ease-in-out;
     }
 
 /*<=======  COTENT LANDING  ==================>*/
@@ -697,11 +695,10 @@ nav a{
         grid-area: cont-land-wel;
         display: flex;
         flex-direction: column;
-        padding: 0px 20px 30px 20px;
+        padding: 0px 20px 0px 20px;
         justify-content: top;
         align-items: left;
         height: 100%;
-        overflow-y: scroll;
     }
 
     .lrg-title-text-landing{
@@ -715,12 +712,6 @@ nav a{
 
     .sml-title-text-landing{
         display: none;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.7;
-        width: 80%;
-        margin: 30px 0px 0px 0px;
     }
 
     .sml-title-text-landing-mobile{
@@ -735,7 +726,7 @@ nav a{
     }
 
     .more-button{
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         height:40px;
@@ -750,49 +741,18 @@ nav a{
         border-radius: 3px;
     }
 
-    .more-button-mobile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:40px;
-        width: fit-content;
-        background-color: black;
-        color: rgb(238, 234, 220);
-        font-size: .9rem;
-        font-family: 'Open Sans' sans-serif;
-        padding: 9px 13px 9px 13px;
-        text-decoration: none;
-        margin: 20px 0px 0px 0px;
-        border-radius: 3px;
+    .hide{
+        display: none;
     }
 
-    .links{
-        grid-area: links;
-        width: 100vw;
-        height: 10vh;
-        bottom: 0;
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(218, 206, 182);
-        position:sticky;
-        bottom: 0;
+    .social-link-buttons-container{
+        margin: 20px 0 0 0;
+        padding: 0;
     }
+
     
-    .link-box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 100%;
-        min-height: 70px;
-        color: rgb(238, 234, 220);
-        font-size: .8rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        font-family: 'Open Sans', sans-serif;
-        text-decoration: none;
-    }
 
+ 
 
 }
 
@@ -918,17 +878,18 @@ nav a{
 /*--------- PORTFOLIO TEXT & STYLES -----------------------*/
 
 .portfolio-pre-title{
-    font-size: .8rem;
+    font-size: .85rem;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(94, 94, 94);
+    color: rgb(153, 153, 153);
     font-weight: 400;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 .portfolio-lrg-title{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
 }
 .portfolio-text{
     font-family: 'Open Sans', sans-serif;
