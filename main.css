@@ -122,13 +122,13 @@ body{
 .mobile-slider{
     position: fixed;
     display: flex;
-    top:10vh;
+    top:70px;
     left:0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 475px;
-    height: 79vh;
+    height: 89vh;
     background-color: rgb(226, 216, 198);
     opacity: 0;
     visibility:hidden;
@@ -142,8 +142,8 @@ body{
     left:0;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
-    padding: 0px 0px 50px 0px;
+    height: 100%;
+    padding: 50px 0px 50px 0px;
     width: 100%;
     list-style: none;
     text-align: center;
@@ -595,7 +595,8 @@ nav a{
         justify-content: flex-end;
         width: 100%;
         align-items: center;
-        padding: 20px 20px 20px 20px;
+        padding: 0px 20px;
+        height: 70px;
     }
     
     .nav-mobile ul{
@@ -603,13 +604,13 @@ nav a{
         flex-direction: row;
         list-style: none;
         width: 100%;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         padding: 0px 0px 0px 0px;
     }
     
     .nav-mobile li{
-        padding: 0px 0px 0px 50px;
+        padding: 0px 0px 0px 0px;
     }
 
     .nav-mobile a {
@@ -625,8 +626,9 @@ nav a{
     
     .close-btn-mobile{
         display: flex;
-        position: fixed;
-        right: 30px;
+        position: absolute;
+        top:10px;
+        right: 20px;
         z-index: 12;
         padding: 9px 22px 9px 22px;
         border-radius: 4px;
@@ -645,8 +647,9 @@ nav a{
     
     .menu-btn-mobile{
         display: flex;
-        position: static;
-        right: 30px;
+        position: absolute;
+        top:10px;
+        right: 20px;
         z-index: 11;
         padding: 9px 22px 9px 22px;
         border-radius: 4px;
