@@ -591,7 +591,7 @@ nav a{
         justify-content: flex-end;
         width: 100%;
         align-items: center;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 20px 20px 20px;
     }
     
     .nav-mobile ul{
@@ -615,8 +615,6 @@ nav a{
 
     /*<=======  HOME LOGO MENU BTNS  ================================>*/
     .home-logo{
-        left:20px;
-        top:22px;
         position: static;
         width: fit-content;
     }
@@ -667,7 +665,7 @@ nav a{
         grid-area: cont-land-wel;
         display: flex;
         flex-direction: column;
-        padding: 0px 30px 0px 30px;
+        padding: 0px 20px 0px 20px;
         justify-content: top;
         align-items: left;
         height: 100%;
@@ -677,19 +675,19 @@ nav a{
     .lrg-title-text-landing{
         font-family: 'Anton', sans-serif;
         font-weight: 100;
-        font-size: 2.1rem;
+        font-size: 2rem;
         line-height: 1.5;
         letter-spacing: .8px;
-        margin: 15px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
     }
-    
-    .sml-title-text-landing{
+
+    .sml-title-text-landing-mobile{
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.7;
         width: 80%;
-        margin: 10px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
     }
 
     .more-button{
@@ -704,7 +702,7 @@ nav a{
         font-family: 'Open Sans' sans-serif;
         padding: 9px 13px 9px 13px;
         text-decoration: none;
-        margin: 20px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
         border-radius: 3px;
     }
 
