@@ -228,7 +228,7 @@ nav{
     padding: 0 0 5px 0;
 }
 
-.mobile-nav-links{
+.nav-link-bar-mobile{
     display: none;
 }
 
@@ -261,141 +261,15 @@ nav{
 
 
 
-@media only screen and (max-width: 822px) {
-
-    .main-grid{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 280px 2.5fr;
-        grid-template-rows: 70px 11fr 1.1fr;
-        grid-template-areas: 
-        "nav nav-link-bar"
-        "main-panel body-img"
-        "links body-img";
-    }
-
-    .lrg-text-heading{
-        font-size: 2.3rem;
-        font-family: 'Anton', sans-serif;
-        font-weight: 400;
-        margin: 40px 0 0 0;
-    }
-
-    .sml-text-heading{
-        width: 85%;
-        font-size: 1rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        line-height: 1.7;
-        margin: 40px 0 0 0;
-    }
-
-    .body-img{
-        grid-area: body-img;
-        background-image: url(images/melb-museum-copyright-radam23.jpg);
-        background-size: cover;
-        background-position: 80% 50%;
-        background-repeat: no-repeat;
-        background-color: rgb(29, 16, 26);
-    }
-
-}
 
 
+/* ======= MOBILE VIEWPORT ======================================== */
+/* ======= MOBILE VIEWPORT ======================================== */
+/* ======= MOBILE VIEWPORT ======================================== */
+/* ======= MOBILE VIEWPORT ======================================== */
 
 
-@media only screen and (max-width: 745px) {
-
-    .main-grid{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 70px 11fr 2fr;
-        grid-template-areas: 
-        "nav mobile-nav mobile-nav mobile-nav"
-        "main-panel main-panel main-panel main-panel"
-        "links links links links";
-    }
-
-    .mobile-nav-links{
-        grid-area: mobile-nav;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-        background-color: bisque;
-        padding: 0 20px;
-    }
-
-    .mobile-nav-links ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .mobile-nav-links li{
-        list-style: none;
-        padding: 0 0 0 20px;
-    }
-
-    .mobile-nav-links a{
-        font-size: .75rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: rgb(43, 8, 22);
-        text-decoration: none;
-    }
-
-
-    .nav-link-bar{
-        display: none;
-    }
-
-    .body-img{
-        display: none;
-    }
-
-    .lrg-text-heading{
-        font-size: 3rem;
-        font-family: 'Anton', sans-serif;
-        font-weight: 400;
-        margin: 40px 0 0 0;
-    }
-
-    .sml-text-heading{
-        width: 85%;
-        font-size: 1.2rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        line-height: 1.7;
-        margin: 40px 0 0 0;
-        width: 70%;
-        min-width: 330px;
-    }
-
-    .body-img{
-        grid-area: body-img;
-        background-image: url(images/melb-museum-copyright-radam23.jpg);
-        background-size: cover;
-        background-position: 80% 50%;
-        background-repeat: no-repeat;
-        background-color: rgb(29, 16, 26);
-    }
-
-    .active-nav-link{
-        border-bottom: rgb(126, 75, 88);
-        border-bottom-width: 2px;
-        border-bottom-style:solid;
-        padding: 0 0 5px 0;
-    }
-
-
-}
-
-
-
-
-
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 767px) {
 
     .main-grid{
         display: grid;
@@ -407,6 +281,20 @@ nav{
         "main-panel main-panel"
         "about-panel about-panel"
         "contact-panel contact-panel";
+    }
+
+
+    /* ======= NAV BAR (MOBILE) ================ */
+    /* ======= NAV BAR (MOBILE) ================ */
+
+    nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: bisque;
+        padding: 0 5vw;
+        align-items: center;
     }
 
     .portfolio-nav-btn{
@@ -427,27 +315,30 @@ nav{
         font-size: 1rem;
     }
 
-    .mobile-nav-links{
+    .nav-link-bar-mobile{
         grid-area: mobile-nav;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 5vw;
     }
 
-    .mobile-nav-links ul{
-        display: none;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .mobile-nav-links li{
-        list-style: none;
-        padding: 0 0 0 20px;
-    }
-
-    .mobile-nav-links a{
+    .nav-link-bar-mobile a{
         font-size: .8rem;
         font-weight: 600;
         letter-spacing: .5px;
         color: rgb(104, 19, 47);
         text-decoration: none;
+    }
+
+    .nav-link-bar-mobile ul{
+        display: none;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-link-bar-mobile li{
+        list-style: none;
+        padding: 0 0 0 20px;
     }
 
     .nav-link-bar{
@@ -459,21 +350,22 @@ nav{
     }
 
 
-/*<------ MAIN PANEL (MOBILE) ------------------------>*/
+    /* ======= MAIN-PANEL (MOBILE) ================ */
+    /* ======= MAIN-PANEL (MOBILE) ================ */
 
     .main-panel{
         grid-area: main-panel;
         display: flex;
-        height: 85vh;
-        align-items: top;
+        height: 75vh;
+        align-items: flex-start;
         justify-content: left;
         background-color: bisque;
         color:black;
-        padding: 20px 20px 70px 20px;
+        padding: 8vh 5vw 0 5vw;
     }
 
     .lrg-text-heading{
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         font-family: 'Anton', sans-serif;
         font-weight: 400;
         margin: 10px 0 0 0;
@@ -485,7 +377,8 @@ nav{
         font-weight: 400;
         line-height: 1.7;
         margin: 20px 0 0 0;
-        width: 90%;
+        width: 85%;
+        max-width: 330px;
         min-width: auto;
     }
 
@@ -510,23 +403,22 @@ nav{
     }
 
 
-
-
-/*<------ ABOUT PANEL (MOBILE)  ------------------------>*/
+/* ======= INDEX - ABOUT PANEL (MOBILE) ================ */
 
     .about-panel{
         grid-area: about-panel;
-        height: 85vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: rgb(53, 12, 35);
-        height: 100vh;
-        padding: 0px 20px 70px 20px;
+        height: 75vh;
+        align-items: flex-start;
+        justify-content: left;
+        background-color: rgb(49, 8, 31);
+        color: bisque;
+        padding: 15vh 5vw 0 5vw;
     }
     
     .about-content-container{
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
@@ -535,7 +427,7 @@ nav{
 
     .about-text{
         color:bisque;
-        width: 100%;
+        width: 80%;
     }
 
     .about-button{
@@ -555,21 +447,17 @@ nav{
         text-decoration: none;
     }
 
-
-/*<------ CONTACT PANEL (MOBILE)  ------------------------>*/
+/* ======= INDEX - CONTACT PANEL (MOBILE) ================ */
 
     .contact-panel{
         grid-area: contact-panel;
-        height: 85vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color:black;
-        height: auto;
-        padding: 70px 20px 70px 20px;
-        display: flex;
-        align-items: center;
+        height: 80vh;
+        align-items: flex-start;
         justify-content: left;
+        background-color: bisque;
+        color:black;
+        padding: 10vh 5vw 0 5vw;    
     }
 
     .contact-content-container{
@@ -580,7 +468,47 @@ nav{
         text-align: left;
     }
 
+    .contact-page-setting{
+        display: flex;
+        height: auto;
+        max-height: 550px;
+        align-items: top;
+        justify-content: left;
+        background-color: bisque;
+        color:black;
+        padding: 50px 20px 0px 20px;
+    }
 
+    .contact-btn-list{
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        min-height: 140px;
+        justify-content: space-between;
+        margin: 45px 0px 0px 0px;
+        padding: 8px 0px;
+    }
+
+.about-page-about{
+    height: 70vh;
+}
+
+.about-page-skills{
+    height: 70vh;
+}
+
+/* ======= MY SKILLS - CONTACT PANEL (MOBILE) ================ */
+
+.skills-panel{
+    display: flex;
+    height: 83vh;
+    align-items: flex-start;
+    justify-content: left;
+    background-color: bisque;
+    color:black;
+    width: 100%;
+    padding: 8vh 5vw 0 5vw;
+}
 
 
 
@@ -594,11 +522,10 @@ nav{
 
 
 
+/* ============== PORTFOLIO DESKTOP ================================== */
+/* ============== PORTFOLIO DESKTOP ================================== */
+/* ============== PORTFOLIO DESKTOP ================================== */
 
-
-/*--------- PORTFOLIO -----------------------------------------------------*/
-/*--------- PORTFOLIO -----------------------------------------------------*/
-/*--------- PORTFOLIO -----------------------------------------------------*/
 
 /*--------- PORTFOLIO GRID ---------------------------------*/
 
@@ -697,9 +624,9 @@ nav{
     margin: 0 0 15px 0;
 }
 
-/*--------- SECTION LAYOUTS ---------------------------------*/
-/*--------- SECTION LAYOUTS ---------------------------------*/
 
+/*--------- SECTION LAYOUTS ---------------------------------*/
+/*--------- SECTION LAYOUTS ---------------------------------*/
 
 /*--------- TEXT-CONTAINER GLOBAL EDITS (TABLET)------------------*/
 
@@ -1049,9 +976,9 @@ nav{
 
 
 
-
-/*<==========  TABLET  =============================>*/
-/*<==========  TABLET  =============================>*/
+/* ============== TABLET PORTFOLIO ================================== */
+/* ============== TABLET PORTFOLIO ================================== */
+/* ============== TABLET PORTFOLIO ================================== */
 
 @media only screen and (max-width: 1024px) {
 
@@ -1071,7 +998,7 @@ nav{
     height: auto;
     grid-area: section1;
     grid-template-columns: 1fr;
-    grid-template-rows:100vh auto auto;
+    grid-template-rows:70vh auto auto;
     grid-template-areas: 
     "section-1-img"
     "text-container1"
@@ -1088,7 +1015,7 @@ nav{
     height: auto;
     grid-area: section2;
     grid-template-columns: 1fr;
-    grid-template-rows:100vh auto auto;
+    grid-template-rows:70vh auto auto;
     grid-template-areas: 
     "section-2-img"
     "text-container1"
@@ -1103,7 +1030,7 @@ nav{
         height: auto;
         grid-area: section3;
         grid-template-columns: 1fr;
-        grid-template-rows:90vh auto auto;
+        grid-template-rows:70vh auto auto;
         grid-template-areas: 
         "section-3-img"
         "text-container1"
@@ -1117,7 +1044,7 @@ nav{
         height: auto;
         grid-area: section4;
         grid-template-columns: 1fr;
-        grid-template-rows:90vh auto auto;
+        grid-template-rows:70vh auto auto;
         grid-template-areas: 
         "section-4-img"
         "text-container1"
@@ -1128,7 +1055,7 @@ nav{
         height: auto;
         grid-area: section5;
         grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
+        grid-template-rows:70vh auto auto;
         grid-template-areas: 
         "section-5-img"
         "text-container1"
@@ -1139,7 +1066,7 @@ nav{
         height: auto;
         grid-area: section6;
         grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
+        grid-template-rows:70vh auto auto;
         grid-template-areas: 
         "section-6-img"
         "text-container1"
@@ -1150,7 +1077,7 @@ nav{
         height: auto;
         grid-area: section7;
         grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
+        grid-template-rows:70vh auto auto;
         grid-template-areas: 
         "section-7-img"
         "text-container1"
@@ -1161,8 +1088,9 @@ nav{
 }
 
 
-/*<==========  MOBILE  ============================>*/
-/*<==========  MOBILE  ============================>*/
+/* ============== MOBILE PORTFOLIO ================================== */
+/* ============== MOBILE PORTFOLIO ================================== */
+/* ============== MOBILE PORTFOLIO ================================== */
 
 @media only screen and (max-width: 420px) {
 

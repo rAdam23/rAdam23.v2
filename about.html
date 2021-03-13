@@ -28,85 +28,89 @@
     <title>rAdam23</title>
 </head>
 
-
 <body>
 
+<section class="main-grid">
 
-<!------------------ NAV  ---------------------------------------------------------->
 
-<section class="page-grid">
+<!-------------------    NAV   ------------------------------------------------>
 
-    <nav class="nav-desktop">
-        <a href="index.html" class="home-logo"><img src="images/rAdam23-logo-dark.png"></a>
-        <ul>
-            <li class="nav-link nav-1"><a href="index.html">Home</a></li>
-            <li class="nav-link nav-2"><a href="about.html" class="active-nav-link-underline">About me</a></li>
-            <li class="nav-link nav-3"><a href="index.html">rAdam23 Art</a></li>
-            <li class="nav-link nav-4"><a href="contact.html">Contact</a></li>
-            <a href="#" id="btnMenuDesktop" class="menu-btn-desktop" onclick="openNav()">Menu</a>
-            <a href="#" id="btnCloseDesktop" class="close-btn-desktop" onclick="closeNav()">Close</a>
-        </ul>
-    </nav>
+<nav>
+    <a href="index.html"><img src="images/logo.png" class="nav-logo"></a>
+</nav>
 
-    <nav class="nav-mobile">
-        <a href="index.html" class="home-logo"><img src="images/rAdam23-logo-dark.png" ></a>
-        <ul>
-            <li class="nav-link nav-1"><a href="index.html">Home</a></li>
-            <li class="nav-link nav-2"><a href="about.html" class="active-nav-link-underline">About me</a></li>
-            <li class="nav-link nav-3"><a href="index.html">rAdam23 Art</a></li>
-            <li class="nav-link nav-4"><a href="contact.html">Contact</a></li>
-            <a href="#" id="btnMenuMobile" class="menu-btn-mobile" onclick="openNav()">Menu</a>
-            <a href="#" id="btnCloseMobile" class="close-btn-mobile" onclick="closeNav()">Close</a>
-        </ul>
-    </nav>
-    
-    <div id="mobileSlider" class="mobile-slider">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="bold-link"><a href="about.html">About me</a></li>
-            <li><a href="walleybanque.html">Walleybanque</a></li>
-            <li><a href="rmit.html">RMIT</a></li>
-            <li><a href="radam23.html">rAdam23</a></li>
-            <li><a href="#">rAdam23 Art</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+<div class="nav-link-bar">
+    <ul>
+        <li><a href="index.html" class="active-nav-link">Home</a></li>
+        <li><a href="walleybanque.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<!-------------------   NAV (MOBILE)  ------------------------------------------>
+
+<div class="nav-link-bar-mobile">
+    <a href="walleybanque.html" class="portfolio-nav-btn">Portfolio &#x2192;</a>
+    <ul>
+        <li><a href="index.html" class="active-nav-link">Home</a></li>
+        <li><a href="walleybanque.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+
+<!-------------------   CONTENT PANEL   --------------------------------------->
+
+<div class="main-panel about-page-about">
+
+    <div class="main-content-container">
+
+        <h1 class="lrg-text-heading">About Me</h1>
+        <h2 class="sml-text-heading">Melbourne-based, living and breathing everything design, code and art I am passionate about design, I like to create websites that are fully customised, designed and coded end-to-end using semantic code & best practices.<br><br>I can be found most days creating websites and refining and refactoring code.</h2>
     </div>
-
-<!------------------ LANDING - WELCOME ------------------------------------------------>
-
-<div class="content-landing-welcome">
-
-    <h1 class="lrg-title-text-landing">About me</h1>
-
-    <p class="sml-title-text-landing max-width-wide">I like to create websites that are fully customised, designed and coded end-to-end using semantic code & best practices.<br><br>My Skills include: UX/UI Design, HTML, CSS, Copyrighting & Graphic Design.<br><br>I like to use include: Figma, Adobe, VS Code, Miro, Sketch, Balsamiq, Github.</p>
-
-    <p class="sml-title-text-landing-mobile">I like to create websites that are fully customised, designed and coded end-to-end using semantic code & best practices.<br><br> My skills include: UX, UI, HTML, CSS and Javascript.</p>
-    
-    <a href="walleybanque.html" class="more-button reduce-margin-about-btn">See my work &#8594;</a>
-
-    <a href="walleybanque.html" class="more-button-mobile">Find out more &#8594;</a>
-
 </div>
 
 
-<div class="img-about"></div>
+<ul class="links">
+    <li class="contact-btn"><a href="contact.html">contact</a></li>
+    <li class="portfolio-btn"><a href="walleybanque.html">portfolio</a></li>
+</ul>
 
 
-<!------------------ LANDING - CONTACT & PORTFOLIO ------------------------------------->
+<div class="body-img"></div>
 
-<div class="links">
 
-    <a href="contact.html" class="link-box contact"><img src="images/phone-icon.svg" class="contact-icon">Contact me</a>
+<!-------------------   ABOUT ME PANEL (MOBILE)   ------------------------------->
 
-    <a href="walleybanque.html" class="link-box portfolio">My Portfolio</a>
+<div class="about-panel about-page-skills">
 
+    <div class="about-content-container">
+
+        <h1 class="lrg-text-heading about-text">My Skills</h1>
+        <h2 class="sml-text-heading about-text">My Skills include: UX/UI Design, HTML, CSS, Copyrighting & Graphic Design.</h2>
+    </div>
 </div>
 
+<!-------------------   CONTACT PANEL (MOBILE)   --------------------------------------->
+
+<div class="contact-panel">
+
+    <div class="contact-content-container">
+
+        <h1 class="lrg-text-heading">Contact me</h1>
+        <h2 class="sml-text-heading">I'm always eager to discuss new projects and ideas from entrepeneurs, startups or mature businesses. Contact me today to see how I can help you with a custom website, user experience or design solution.</h2>
+        <ul class="contact-btn-list">
+            <li><a href="https://twitter.com/radam23official" class="page-button" target="_blank"><img src="images/twitter-icon.svg" class="twitter-icon">Send a tweet</a></li>
+            <li><a href="https://facebook.com/radam23official"  class="page-button"><img src="images/facebook-icon.svg" class="facebook-icon">Let's be friends</a></li>
+            <li><a href="walleybanque.html"  class="page-button"><img src="images/mail-icon.svg" class="mail-icon">Email me</a></li>
+        </ul>
+
+    </div>
+</div>
+
+</section>
 
 </body>
-<script src="main.js"></script>
+
 </html>
-
-
-
-
