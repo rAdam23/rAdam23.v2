@@ -41,7 +41,9 @@ nav{
     height: 20px;
 }
 
-.nav-link-bar{
+
+
+.nav-link-bar, .portfolio-nav{
     background-color: rgb(65, 10, 42);
     padding: 0px 20px;
     display: flex;
@@ -49,25 +51,25 @@ nav{
     align-items: center;
 }
 
-.nav-link-bar ul{
+.nav-link-bar ul, .portfolio-nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.nav-link-bar li{
+.nav-link-bar li, .portfolio-nav li{
     list-style: none;
     padding: 8px 16px;
     margin: 0 0 0 15px;
     cursor: pointer;
 }
 
-.nav-link-bar li:hover{
+.nav-link-bar li:hover, .portfolio-nav li:hover{
     background-color: rgba(48, 7, 31, 0.505);
     border-radius: 4px;
 }
 
-.nav-link-bar a {
+.nav-link-bar a, .portfolio-nav a{
     font-size: .75rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -103,6 +105,10 @@ nav{
     justify-content: top;
 }
 
+.contact-content-container{
+    display: none;
+}
+
 
 
 
@@ -135,31 +141,28 @@ nav{
     background-color: black;
     cursor: pointer;
     margin: 30px 0 0 0;
+    text-decoration: none;
 }
 
 .page-button:hover{
     background-color: rgb(36, 36, 36);
 }
 
-.reduce-margin{
-    margin: 15px 0 0 0;
-}
 
-.contact-btn-width{
-    width: 150px;
-}
+
+
 
 .twitter-icon{
     height: 15px;
-    margin: 1px 10px 0 0;
+    margin: 0px 10px 0 0;
 }
 .facebook-icon{
     height: 18px;
-    margin: 1px 10px 0 0;
+    margin: 0px 10px 0 0;
 }
 .mail-icon{
     height: 15px;
-    margin: 1px 10px 0 0;
+    margin: 0px 10px 0 0;
 }
 
 
@@ -194,6 +197,10 @@ nav{
     height: 100%;
 }
 
+.contact-btn a:hover{
+    background-color: rgb(46, 12, 26);
+}
+
 .portfolio-btn a{
     grid-area: portfolio-btn;
     font-size: .95rem;
@@ -207,6 +214,10 @@ nav{
     align-items: center;
     text-decoration: none;
     height: 100%;
+}
+
+.portfolio-btn a:hover{
+    background-color: rgb(116, 94, 87);
 }
 
 .active-nav-link{
@@ -230,6 +241,24 @@ nav{
 .portfolio-nav-btn{
     display: none;
 }
+
+
+
+.contact-btn-list{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    margin: 25px 0px;
+    padding: 8px 0px;
+}
+
+.contact-btn-list li{
+    justify-content: space-between;
+    list-style: none;
+}
+
+
 
 
 @media only screen and (max-width: 822px) {
@@ -364,6 +393,8 @@ nav{
 
 
 
+
+
 @media only screen and (max-width: 420px) {
 
     .main-grid{
@@ -383,7 +414,7 @@ nav{
         margin: 15px 0 20px 0;
         border-style: solid;
         border-width: 2px;
-        border-color: rgb(82, 11, 35);
+        border-color: rgb(119, 23, 55);
         padding: 6px;
         border-radius: 4px;
     }
@@ -391,7 +422,7 @@ nav{
     .portfolio-nav-btn a{
         text-decoration: none;
         font-weight: 400;
-        color: rgb(82, 11, 35);
+        color: rgb(104, 19, 47);
         width: 100px;
         font-size: 1rem;
     }
@@ -415,7 +446,7 @@ nav{
         font-size: .8rem;
         font-weight: 600;
         letter-spacing: .5px;
-        color: rgb(82, 11, 35);
+        color: rgb(104, 19, 47);
         text-decoration: none;
     }
 
@@ -428,7 +459,7 @@ nav{
     }
 
 
-/*<------ MAIN PANEL   ------------------------>*/
+/*<------ MAIN PANEL (MOBILE) ------------------------>*/
 
     .main-panel{
         grid-area: main-panel;
@@ -481,17 +512,17 @@ nav{
 
 
 
-/*<------ ABOUT PANEL   ------------------------>*/
+/*<------ ABOUT PANEL (MOBILE)  ------------------------>*/
 
     .about-panel{
         grid-area: about-panel;
         height: 85vh;
         display: flex;
-        background-color: rgb(63, 14, 42);
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(53, 12, 35);
         height: 100vh;
         padding: 0px 20px 70px 20px;
-        display: flex;
-        align-items: top;
     }
     
     .about-content-container{
@@ -515,20 +546,24 @@ nav{
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         background-color: bisque;
-        color: rgb(49, 16, 34);
+        color: rgb(53, 12, 35);
         border: bisque;
         border-width: 1px;
         border-style: solid;
         cursor: pointer;
         margin: 30px 0 0 0;
+        text-decoration: none;
     }
 
 
-/*<------ CONTACT PANEL   ------------------------>*/
+/*<------ CONTACT PANEL (MOBILE)  ------------------------>*/
 
     .contact-panel{
         grid-area: contact-panel;
-        background-color: bisque;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         color:black;
         height: auto;
         padding: 70px 20px 70px 20px;
@@ -536,7 +571,15 @@ nav{
         align-items: center;
         justify-content: left;
     }
-    
+
+    .contact-content-container{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
+    }
+
 
 
 
@@ -658,7 +701,7 @@ nav{
 /*--------- SECTION LAYOUTS ---------------------------------*/
 
 
-/*--------- CONTAINER GLOBAL EDITS (MOBILE)------------------*/
+/*--------- TEXT-CONTAINER GLOBAL EDITS (TABLET)------------------*/
 
 .text-container1{
     grid-area: text-container1;
@@ -982,7 +1025,7 @@ nav{
         }
 
         .s7-walley{
-            background-image: url(images/walleybanque-app-copyright-radam23png.png);
+            background-image: url(images/Walleybanque-App-\(desktop\)-copyright-rAdam23.png);
             background-position: 50% 50%;
             background-size:100%;
             background-color: rgb(66, 56, 49);
@@ -1003,8 +1046,12 @@ nav{
         }
 
 
-/*<==========  TABLET RESPONSIVE  =========================>*/
-/*<==========  TABLET RESPONSIVE  =========================>*/
+
+
+
+
+/*<==========  TABLET  =============================>*/
+/*<==========  TABLET  =============================>*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -1012,15 +1059,13 @@ nav{
     display: none;
 }
 
-
-
-/*--------- CONTAINER GLOBAL EDITS (MOBILE)------------------*/
+/*--------- TEXT-CONTAINER GLOBAL EDITS (TABLET) ------------------*/
 
 .text-container1{
     padding: 50px 30px 0px 30px;
 }
 
-/*<------ SECTION 1 (MOBILE)  ------------>*/
+/*<------ SECTION 1 (TABLET)  ------------>*/
 
 .section1{
     height: auto;
@@ -1037,7 +1082,7 @@ nav{
             padding: 50px 30px 30px 30px;
         }
 
-/*<------ SECTION 2 (MOBILE)  ------------>*/
+/*<------ SECTION 2 (TABLET)  ------------>*/
 
 .section2{
     height: auto;
@@ -1052,7 +1097,7 @@ nav{
         /*--------- CONTAINER EDITS ------------------*/
 
 
-/*<------ SECTION 3 (MOBILE)  ------------>*/
+/*<------ SECTION 3 (TABLET)  ------------>*/
 
     .section3{
         height: auto;
@@ -1066,7 +1111,7 @@ nav{
     }
         /*--------- CONTAINER EDITS ------------------*/
 
-/*<------ SECTION 4 (MOBILE)  ------------>*/
+/*<------ SECTION 4 (TABLET)  ------------>*/
 
     .section4{
         height: auto;
@@ -1116,8 +1161,8 @@ nav{
 }
 
 
-/*<==========  TABLET RESPONSIVE  =========================>*/
-/*<==========  TABLET RESPONSIVE  =========================>*/
+/*<==========  MOBILE  ============================>*/
+/*<==========  MOBILE  ============================>*/
 
 @media only screen and (max-width: 420px) {
 
@@ -1128,3 +1173,21 @@ nav{
     .portfolio-nav li{
         display: none;
     }
+
+    /*<------ SECTION 1 (MOBILE)  ------------>*/
+
+        .section-1-img{
+            grid-area: section-1-img;
+            background-size:160px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        .s7-walley{
+            background-image: url(images/Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+            background-position: 50% 50%;
+            background: size 95%;
+            background-color: rgb(66, 56, 49);
+        }
+
+    
