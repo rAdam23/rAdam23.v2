@@ -357,6 +357,7 @@ nav{
         grid-area: main-panel;
         display: flex;
         height: 75vh;
+        min-height: 600px;
         align-items: flex-start;
         justify-content: left;
         background-color: bisque;
@@ -409,6 +410,7 @@ nav{
         grid-area: about-panel;
         display: flex;
         height: 75vh;
+        min-height: 600px;
         align-items: flex-start;
         justify-content: left;
         background-color: rgb(49, 8, 31);
@@ -453,6 +455,7 @@ nav{
         grid-area: contact-panel;
         display: flex;
         height: 80vh;
+        min-height: 650px;
         align-items: flex-start;
         justify-content: left;
         background-color: bisque;
