@@ -11,1152 +11,1976 @@ html{
 }
 
 body{
-    background-color:bisque
+    background-color: rgb(252, 240, 220);
 }
 
-.main-grid{
+/*< =======  PAGE GRID  =======  >*/
+
+.page-grid{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 400px 2.5fr;
-    grid-template-rows: 70px 11fr 1.1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "nav nav-link-bar"
-    "main-panel body-img"
-    "links body-img";
+    "landing-block"
+    "ux-ui-block"
+    "about-block"
+    "contact-block";
 }
+
+
+/*< =======  LANDING BLOCK DESKTOP  =================================  >*/
+
+.landing-block{
+    grid-area: landing-block;
+    display: grid;
+    grid-template-columns: 380px 1fr 1fr 1fr ;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "landing-section landing-img landing-img landing-img";
+    margin: 0 5vw;
+    background-color: rgb(252, 240, 220);
+}
+
+/*< =======  NAV  DESKTOP =======  >*/
 
 nav{
     grid-area: nav;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    grid-area: nav;
-    background-color: bisque;
-    padding: 0 20px;
     align-items: center;
 }
 
-
-.nav-logo{
-    height: 20px;
-}
-
-
-
-.nav-link-bar, .portfolio-nav{
-    background-color: rgb(65, 10, 42);
-    padding: 0px 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav-link-bar ul, .portfolio-nav ul{
+nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-link-bar li, .portfolio-nav li{
+nav li{
     list-style: none;
-    padding: 8px 16px;
-    margin: 0 0 0 15px;
-    cursor: pointer;
+    margin-left: 30px;
 }
 
-.nav-link-bar li:hover, .portfolio-nav li:hover{
-    background-color: rgba(48, 7, 31, 0.505);
-    border-radius: 4px;
-}
-
-.nav-link-bar a, .portfolio-nav a{
-    font-size: .75rem;
+nav a{
+    color: rgb(160, 115, 102);
+    text-decoration: none;
+    font-size: .9rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    color: rgb(255, 241, 224);
-    text-decoration: none;
-}
-
-
-
-
-.body-img{
-    grid-area: body-img;
-    background-image: url(images/melb-museum-copyright-radam23.jpg);
-    background-size: cover;
-    background-position: 60% 50%;
-    background-repeat: no-repeat;
-    background-color: rgb(29, 16, 26);
-}
-
-
-
-
-.main-panel{
-    grid-area: main-panel;
-    background-color: bisque;
-    padding: 20px;
-}
-
-.main-content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: top;
-}
-
-.contact-content-container{
-    display: none;
-}
-
-
-
-
-.lrg-text-heading{
-    font-size: 3rem;
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
-    margin: 40px 0 0 0;
-}
-
-.sml-text-heading{
-    width: 85%;
-    font-size: 1.1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    margin: 40px 0 0 0;
-}
-
-
-
-.page-button{
-    padding: 8px 10px;
-    border-radius: 3px;
-    width: fit-content;
-    font-size: .85rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: bisque;
-    background-color: black;
-    cursor: pointer;
-    margin: 30px 0 0 0;
-    text-decoration: none;
-}
-
-.page-button:hover{
-    background-color: rgb(36, 36, 36);
-}
-
-
-
-
-
-
-.twitter-icon{
-    height: 15px;
-    margin: 0px 10px 0 0;
-}
-.facebook-icon{
-    height: 18px;
-    margin: 0px 10px 0 0;
-}
-.mail-icon{
-    height: 15px;
-    margin: 0px 10px 0 0;
-}
-
-
-
-
-
-.links{
-    grid-area:links;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "contact-btn portfolio-btn";
-}
-
-.contact-btn, .portfolio-btn{
-    list-style: none;
-}
-
-.contact-btn a{
-    grid-area: contact-btn;
-    font-size: .95rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: bisque;
     letter-spacing: .5px;
-    display: flex;
-    background-color: rgb(53, 14, 30);
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    height: 100%;
 }
 
-.contact-btn a:hover{
-    background-color: rgb(46, 12, 26);
+nav a:hover{
+    color: rgb(163, 34, 17);
 }
 
-.portfolio-btn a{
-    grid-area: portfolio-btn;
-    font-size: .95rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: bisque;
-    letter-spacing: .5px;
-    display: flex;
-    background-color: rgb(129, 105, 96);
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    height: 100%;
+.nav-logo{
+    height: 22px;
 }
 
-.portfolio-btn a:hover{
-    background-color: rgb(116, 94, 87);
-}
-
-.active-nav-link{
-    color: bisque;
-    border-bottom: bisque;
-    border-bottom-width: 2px;
-    border-bottom-style:solid;
-    padding: 0 0 5px 0;
-}
-
-.nav-link-bar-mobile{
-    display: none;
-}
-
-.about-panel{
-    display: none;
-}
-.contact-panel{
-    display: none;
-}
-
-
-.portfolio-nav-btn-desktop{
-    display: flex;
-    margin: 15px 0 20px 0;
+.navlink-3{
+    border-color: rgb(163, 34, 17);
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(119, 23, 55);
-    padding: 6px;
     border-radius: 4px;
-    text-decoration: none;
-    color: rgb(104, 19, 47);
-    width: auto;
+    padding: 5px 8px;
+    font-weight: 400;
+}
+.navlink-3 a{
+    color: rgb(163, 34, 17);
     font-weight: 600;
-    font-size: .8rem;
 }
-
-.light-mode{
-    border-color:bisque;
-    color: bisque;
+.navlink-3 a:hover{
+    color: rgb(163, 34, 17);
 }
 
 
+/*< =======  LANDING SECTION DESKTOP  =======  >*/
 
-.contact-btn-list{
+.landing-section{
+    grid-area:landing-section;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 630px;
+    padding: 30px 0 30px 0;
+}
+
+.page-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.page-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    width: 78%;
+    margin: 30px 0 0 0;
+}
+
+.landing-img-box{
+    grid-area: landing-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 0px 30px 30px;
+    max-height: 100%;
+}
+
+.landing-image{
+    height: 72vh;
+    width: 64vw;
+    max-width: 800px;
+    background-image: url(images/melb-museum-copyright-radam23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 60%;
+    filter: drop-shadow(7px 10px 10px rgb(71, 71, 71))saturate(110%);
+    border-radius: 10px;
+}
+
+.page-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+    padding: 20px;
+    width: fit-content;
+    max-height: 30px;
+    border-radius: 5px;
+    margin: 40px 0 0 0;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.page-button img{
+    height: 8px;
+    margin: 2px 0 0 8px;
+}
+
+
+
+/*< =======  UX UI SECTION DESKTOP  =================================  >*/
+
+.ux-ui-block{
+    grid-area: ux-ui-block;
     display: flex;
     flex-direction: column;
-    height: 140px;
-    justify-content: space-between;
-    margin: 25px 0px;
-    padding: 8px 0px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(87, 7, 44);    
 }
 
-.contact-btn-list li{
+.ux-ui-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    height: 100%;
+    margin: 0 5vw;
+}
+
+.ux-ui-text{
+    font-family: 'Anton', sans-serif;
+    font-size: 7.2rem;
+    letter-spacing: 4px;
+    font-weight: 100;
+    color: rgb(243, 230, 213);
+    padding-bottom: 10px;
+}
+
+
+
+/*< =======  ABOUT SECTION DESKTOP  =================================  >*/
+
+.about-block{
+    grid-area: about-block;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+    ". . "
+    "about-section about-img";
+    margin: 0 5vw;
+    background-color: rgb(252, 240, 220); 
+}
+
+.about-section{
+    grid-area:about-section;
+    display: flex;
     justify-content: space-between;
-    list-style: none;
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 380px;
+    padding: 30px 0 40% 0;
+}
+
+.about-img-box{
+    grid-area: about-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 0px 30px 30px;
+    max-height: 100%;
+}
+
+.about-image{
+    height: 100%;
+    min-height: 440px;
+    width: 50vw;
+    min-width: 320px;
+    background-image: url(images/laptop-image-lrg-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 30% 70%;
+    filter: drop-shadow(0 0 0 rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
 }
 
 
 
 
+/*< =======  CONTACT SECTION DESKTOP  =================================  >*/
+
+.contact-block{
+    grid-area: contact-block;
+    display: grid;
+    grid-template-columns: 380px 1fr 1fr 1fr ;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+    ". . . ."
+    "contact-section contact-img contact-img contact-img";
+    background-color: rgb(233, 210, 182); 
+}
+
+.contact-section{
+    grid-area:contact-section;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 380px;
+    padding: 30px 0 40% 0;
+    margin: 0 0 0 5vw;
+}
+
+.contact-img-box{
+    grid-area: contact-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 0px 30px 30px;
+    max-height: 100%;
+    margin: 0 0 0 5vw;
+}
+
+.contact-image{
+    height: 100%;
+    min-height: 440px;
+    width: 100%;
+    min-width: 320px;
+    background-image: url(images/socials-image-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 60% 50%;
+    filter: drop-shadow(0 0 0 rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
+}
 
 
-/* ======= MOBILE VIEWPORT ======================================== */
-/* ======= MOBILE VIEWPORT ======================================== */
-/* ======= MOBILE VIEWPORT ======================================== */
-/* ======= MOBILE VIEWPORT ======================================== */
+.twitter-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+.facebook-icon img{
+    height: 18px;
+    margin: 0 10px 0 0;
+}
+.mail-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+
+.top-margin-reduce{
+    margin: 20px 0 0 0;
+}
 
 
-@media only screen and (max-width: 767px) {
 
-    .main-grid{
+
+/*< ============  TABLET    ===========================  >*/
+/*< ============  TABLET    ===========================  >*/
+
+@media only screen and (max-width: 1030px) {
+
+    .page-grid{
         display: grid;
-        height: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 1fr 1fr 1fr;
         grid-template-areas: 
-        "nav mobile-nav"
-        "main-panel main-panel"
-        "about-panel about-panel"
-        "contact-panel contact-panel";
+        "landing-block"
+        "ux-ui-block"
+        "about-block"
+        "contact-block";
+    }
+    
+
+/*< =======  LANDING BLOCK TABLET ====================================  >*/
+
+    .landing-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 10vh 90vh;
+        grid-template-areas: 
+        "nav nav"
+        "landing-section landing-img"
+        "landing-section landing-img";
+    }
+
+ 
+    /*< ====  LANDING SECTION TABLET ====================================  >*/
+
+    .landing-section{
+        grid-area:landing-section;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: auto;
+        padding: 50px 0 40% 0;
+    }
+    
+    .page-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 400;  
+        padding: 0;
+        margin: 0;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+    
+    .page-text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-weight: 400;
+        width: 270px;
+        margin: 30px 0 0 0;    
+    }
+    
+    .landing-img-box{
+        grid-area: landing-img;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0 0 0;
+        max-height: auto;
+    }
+    
+    .landing-image{
+        height: 100%;
+        min-height: auto;
+        width: 38vw;
+        min-width:  230px;
+        background-image: url(images/pancake-full-stack-copyright-rAdam23.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 90%;
+        filter: drop-shadow(0px 0px 0px rgb(71, 71, 71))saturate(100%);
+        border-radius: 10px;
+    }
+    
+    
+    .page-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .9rem;
+        padding: 20px;
+        width: fit-content;
+        max-height: 30px;
+        border-radius: 5px;
+        margin: 40px 0 0 0;
+        cursor: pointer;
+    }
+
+    .page-button:hover {
+        background-color: rgb(49, 49, 49);
+    }
+
+    .page-button img{
+        height: 8px;
+        margin: 2px 0 0 8px;
     }
 
 
-    /* ======= NAV BAR (MOBILE) ================ */
-    /* ======= NAV BAR (MOBILE) ================ */
+
+
+
+
+/*< =======  UX UI SECTION TABLET ====================================  >*/
+
+    .ux-ui-block{
+        grid-area: ux-ui-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgb(87, 7, 44);    
+    }
+
+    .ux-ui-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        height: 100%;
+        margin: 0 4vw;
+    }
+
+    .ux-ui-text{
+        font-family: 'Anton', sans-serif;
+        font-size: 7.2rem;
+        letter-spacing: 4px;
+        font-weight: 100;
+        color: rgb(243, 230, 213);
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+/*< =======  ABOUT SECTION TABLET ====================================  >*/
+
+.about-block{
+    grid-area: about-block;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10vh 40vh 40vh;
+    grid-template-areas: 
+    ". "
+    "about-section"
+    "about-img";
+    margin: 0 4vw;
+    background-color: rgb(252, 240, 220); 
+}
+
+.about-section{
+    grid-area:about-section;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    max-height: 380px;
+    padding: 30px 0 0 0;
+}
+
+.about-img-box{
+    grid-area: about-img;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 0px 0px 0px;
+    max-height: 100%;
+}
+
+.about-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/laptop-image-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: 80% 80%;
+    filter: drop-shadow(0 0 0 rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*< =======  CONTACT SECTION TABLET ====================================  >*/
+
+.contact-block{
+    grid-area: contact-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+    ". . "
+    "contact-section contact-img ";
+    background-color: rgb(233, 210, 182); 
+}
+
+.contact-img-box{
+    grid-area: contact-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 0px 30px 30px;
+    max-height: 100%;
+    margin: 0 4vw 0 4vw;
+}
+
+.contact-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/socials-image-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 70% 60%;
+    filter: drop-shadow(0 0 0 rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
+}
+
+
+
+.twitter-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+.facebook-icon img{
+    height: 18px;
+    margin: 0 10px 0 0;
+}
+.mail-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+
+.top-margin-reduce{
+    margin: 20px 0 0 0;
+}
+
+.top-margin-add{
+    margin: 50px 0 0 0;
+}
+
+
+}
+
+
+
+
+
+
+/*< ============  MOBILE    ===========================  >*/
+/*< ============  MOBILE    ===========================  >*/
+
+@media only screen and (max-width: 750px) {
+
+    .page-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 1fr 80vh 1fr;
+        grid-template-areas: 
+        "landing-block"
+        "ux-ui-block"
+        "about-block"
+        "contact-block";
+    }
+    
+
+/*< =======  LANDING BLOCK MOBILE  ===========================  >*/
+
+
+    .landing-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 55vh 35vh;
+        grid-template-areas: 
+        "nav nav"
+        "landing-section landing-section "
+        "landing-img landing-img";
+    }
+
+ 
+    /*< ====  LANDING SECTION MOBILE  ===========================  >*/
+
+    .landing-section{
+        grid-area:landing-section;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: auto;
+        padding: 50px 0 0 0;
+    }
+    
+    .page-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;  
+        padding: 0;
+        margin: 0;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+    
+    .page-text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.6;
+        font-weight: 400;
+        width: 270px;
+        margin: 30px 0 0 0;    
+    }
+    
+    .landing-img-box{
+        grid-area: landing-img;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0 0 0;
+        max-height: auto;
+    }
+    
+    .landing-image{
+        height: 100%;
+        width: 100%;
+        background-image: url(images/pancake-full-stack-copyright-rAdam23.svg);
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: 90% 70%;
+        filter: drop-shadow(0px 0px 0px rgb(71, 71, 71))saturate(100%);
+        border-radius: 10px;
+    }
+    
+    
+    .page-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .9rem;
+        padding: 20px;
+        width: fit-content;
+        max-height: 30px;
+        border-radius: 5px;
+        margin: 40px 0 0 0;
+        cursor: pointer;
+    }
+
+    .page-button:hover {
+        background-color: rgb(49, 49, 49);
+    }
+
+    .page-button img{
+        height: 8px;
+        margin: 2px 0 0 8px;
+    }
+
+
+
+
+
+
+/*< =======  UX UI SECTION MOBILE  ===========================  >*/
+
+    .ux-ui-block{
+        grid-area: ux-ui-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgb(87, 7, 44);    
+    }
+
+    .ux-ui-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        height: 100%;
+        margin: 0 4vw;
+    }
+
+    .ux-ui-text{
+        font-family: 'Anton', sans-serif;
+        font-size: 7.2rem;
+        letter-spacing: 4px;
+        font-weight: 100;
+        color: rgb(243, 230, 213);
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+/*< =======  ABOUT SECTION MOBILE  ===========================  >*/
+
+.about-block{
+    grid-area: about-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 30vh 40vh;
+    grid-template-areas: 
+    "."
+    "about-section"
+    "about-img";
+    margin: 0 4vw;
+    background-color: rgb(252, 240, 220); 
+    height: auto;
+}
+
+.about-section{
+    grid-area:about-section;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: auto;
+    padding: 0;
+}
+
+.about-img-box{
+    grid-area: about-img;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+    max-height: auto;
+}
+
+.about-image{
+    height: 100%;
+    width: 100%;
+    min-height: auto;
+    max-width: 430px;
+    background-image: url(images/laptop-image-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 90% 55%;
+    filter: drop-shadow(0px 0px 0px rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*< =======  CONTACT SECTION MOBILE ===========================  >*/
+
+.contact-block{
+    grid-area: contact-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto auto;
+    grid-template-areas: 
+    "."
+    "contact-section"
+    "contact-img ";
+    background-color: rgb(233, 210, 182); 
+}
+
+
+.contact-img-box{
+    grid-area: contact-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 0px 30px 30px;
+    max-height: 100%;
+    margin: 0 4vw 0 4vw;
+}
+
+.contact-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/socials-image-copyright-rAdam23.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 80% 40%;
+    filter: drop-shadow(0 0 0 rgb(71, 71, 71))saturate(100%);
+    border-radius: 10px;
+}
+
+
+
+.twitter-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+.facebook-icon img{
+    height: 18px;
+    margin: 0 10px 0 0;
+}
+.mail-icon img{
+    height: 16px;
+    margin: 2px 10px 0 0;
+}
+
+.top-margin-reduce{
+    margin: 20px 0 0 0;
+}
+
+.top-margin-add{
+    margin: 50px 0 0 0;
+}
+
+
+}
+
+
+
+
+
+
+
+
+/*< ============  MOBILE    ===========================  >*/
+/*< ============  MOBILE    ===========================  >*/
+
+@media only screen and (max-width: 595px) {
+
+    .page-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh 100vh 90vh 100vh;
+        grid-template-areas: 
+        "landing-block"
+        "ux-ui-block"
+        "about-block"
+        "contact-block";
+    }
+    
+
+/*< =======  LANDING BLOCK MOBILE  ===========================  >*/
+
+
+    .landing-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 50vh 40vh;
+        grid-template-areas: 
+        "nav nav"
+        "landing-section landing-section "
+        "landing-img landing-img";
+    }
+
+ 
+    /*< ====  LANDING SECTION MOBILE  ===========================  >*/
+
+    .landing-section{
+        grid-area:landing-section;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: auto;
+        padding: 60px 0 0 0;
+        height: auto;
+    }
+
+    .landing-img-box{
+        grid-area: landing-img;
+        display: none;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0 0 0;
+        max-height: auto;
+    }
+    
+
+    .navlink-1,.navlink-2{
+        display: none;
+    }
 
     nav{
         grid-area: nav;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: bisque;
-        padding: 0 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 270px;
+        justify-content: flex-end;
         align-items: center;
     }
 
-    .portfolio-nav-btn-desktop{
-        display: none;
+    nav li{
+        list-style: none;
     }
 
-    .portfolio-nav-btn-mobile{
-        display: flex;
-        margin: 15px 0 20px 0;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(119, 23, 55);
-        padding: 6px;
-        border-radius: 4px;
+    nav a{
+        color: rgb(160, 115, 102);
         text-decoration: none;
-        color: rgb(104, 19, 47);
-        width: auto;
-        font-weight: 600;
-        font-size: .8rem;
-    }
-
-    .light-mode{
-        border-color:bisque;
-        color: bisque;
-    }    
-    
-    .nav-link-bar-mobile{
-        grid-area: mobile-nav;
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 20px;
-    }
-
-    .nav-link-bar-mobile a{
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 600;
         letter-spacing: .5px;
-        color: rgb(104, 19, 47);
-        text-decoration: none;
     }
-
-    .nav-link-bar-mobile ul{
-        display: none;
+    
+    .page-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 400;  
+        padding: 0;
+        margin: 0;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+    
+    .page-text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        font-weight: 400;
+        width: 280px;
+        margin: 20px 0 0 0;    
+    }
+    
+    
+    .page-button {
+        display: flex;
         flex-direction: row;
         align-items: center;
-    }
-
-    .nav-link-bar-mobile li{
-        list-style: none;
-        padding: 0 0 0 20px;
-    }
-
-    .nav-link-bar{
-        display: none;
-    }
-
-    .body-img{
-        display: none;
-    }
-
-
-    /* ======= MAIN-PANEL (MOBILE) ================ */
-    /* ======= MAIN-PANEL (MOBILE) ================ */
-
-    .main-panel{
-        grid-area: main-panel;
-        display: flex;
-        height: 80vh;
-        min-height: 590px;
-        align-items: flex-start;
-        justify-content: left;
-        background-color: bisque;
-        color:black;
-        padding: 50px 20px 0 20px;
-    }
-
-    .lrg-text-heading{
-        font-size: 2.8rem;
-        font-family: 'Anton', sans-serif;
-        font-weight: 400;
-        margin: 10px 0 0 0;
-    }
-
-    .sml-text-heading{
-        font-size: 1rem;
+        background-color: black;
+        color: white;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        line-height: 1.7;
-        margin: 20px 0 0 0;
-        width: 85%;
+        font-size: .9rem;
+        padding: 20px;
+        width: fit-content;
+        max-height: 30px;
+        border-radius: 5px;
+        margin: 40px 0 0 0;
+        cursor: pointer;
+    }
+
+    .page-button:hover {
+        background-color: rgb(49, 49, 49);
+    }
+
+    .page-button img{
+        height: 8px;
+        margin: 2px 0 0 8px;
+    }
+
+
+
+    /*< =======  UX UI SECTION MOBILE  ===========================  >*/
+
+    .ux-ui-block{
+        grid-area: ux-ui-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: rgb(87, 7, 44);    
+    }
+
+    .ux-ui-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        height: auto;
+        margin: 0 4vw;
+    }
+
+    .ux-ui-text{
+        font-family: 'Anton', sans-serif;
+        font-size: 5.2rem;
+        letter-spacing: 4px;
+        font-weight: 100;
+        color: rgb(243, 230, 213);
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+    /*< =======  ABOUT SECTION MOBILE  ===========================  >*/
+
+    .about-block{
+        grid-area: about-block;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4vw;
+        background-color: rgb(252, 240, 220); 
+        justify-content: flex-start;
+        padding: 120px 0;
+    }
+
+    .about-img-box{
+        grid-area: landing-img;
+        display: none;
+        align-items: center;
+        padding: 0 0 0 0;
+        max-height: auto;
+    }
+
+    .about-image{
+        height: 100%;
+        width: 100%;
         max-width: 330px;
-    }
-
-    .remove-margin{
-        margin: 0 0 0 0;
-    }
-
-    .body-img{
-        grid-area: body-img;
-        background-image: url(images/melb-museum-copyright-radam23.jpg);
-        background-size: cover;
-        background-position: 80% 50%;
+        background-image: url(images/laptop-image-copyright-rAdam23.svg);
         background-repeat: no-repeat;
-        background-color: rgb(29, 16, 26);
+        background-size: 60%;
+        background-position: 60% 60%;
+        filter: drop-shadow(0px 0px 0px rgb(71, 71, 71))saturate(100%);
+        border-radius: 10px;
     }
 
-    .active-nav-link{
-        border-bottom: bisque;
-        border-bottom-width: 2px;
-        border-bottom-style:solid;
-        padding: 0 0 5px 0;
+
+
+
+
+
+
+    /*< =======  CONTACT SECTION MOBILE ===========================  >*/
+
+    .contact-block{
+        grid-area: contact-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(233, 210, 182); 
+        height: auto;
     }
 
-    .links{
+    .contact-section{
+        grid-area:contact-section;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: auto;
+        padding: 0 0 0 0;
+        margin: 0 0 0 4vw;
+    }
+
+    .contact-img-box{
+        grid-area: contact-img;
         display: none;
     }
 
+    .twitter-icon img{
+        height: 16px;
+        margin: 2px 10px 0 0;
+    }
+    .facebook-icon img{
+        height: 18px;
+        margin: 0 10px 0 0;
+    }
+    .mail-icon img{
+        height: 16px;
+        margin: 2px 10px 0 0;
+    }
 
-/* ======= INDEX - ABOUT PANEL (MOBILE) ================ */
+    .top-margin-reduce{
+        margin: 20px 0 0 0;
+    }
 
-    .about-panel{
-        grid-area: about-panel;
-        display: flex;
-        height: 70vh;
-        min-height: 580px;
-        align-items: center;
-        justify-content: left;
-        background-color: rgb(49, 8, 31);
-        color: bisque;
-        padding: 0 5vw 0 5vw;
+    .top-margin-add{
+        margin: 50px 0 0 0;
+    }
+
+
+}
+
+
+
+
+/*< =======  PORTFOLIO PAGE GRID  =======  >*/
+
+.portfolio-page-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "portfolio-landing-block"
+    "section-1-block"
+    "section-2-block"
+    "section-3-block"
+    "section-4-block"
+    "section-5-block"
+    "section-6-block";
+}
+
+
+/*< =======  PORTFOLIO LANDING BLOCK DESKTOP  =================================  >*/
+
+.portfolio-landing-block{
+    grid-area: portfolio-landing-block;
+    display: grid;
+    grid-template-columns: 380px 1fr 1fr 1fr;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "portfolio-landing-section portfolio-landing-img portfolio-landing-img portfolio-landing-img";
+    margin: 0 5vw;
+    background-color: rgb(252, 240, 220);
+}
+
+.portfolio-landing-section{
+    grid-area:portfolio-landing-section;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+}
+
+.portfolio-landing-img-box{
+    grid-area: portfolio-landing-img;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    padding: 30px 8vw 30px 30px;
+    height: 100%;
+}
+
+.portfolio-landing-image{
+    height: 530px;
+    width: 480px;
+    background-color: rgb(248, 248, 248);
+    background-image: url(images/walleybanque-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+.active-nav{
+    color: rgb(163, 34, 17);   
+}
+
+
+.portfolio-heading-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.portfolio-sub-heading-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    font-weight: 400;
+    width: 90%;
+    margin: 30px 0 0 0;
+}
+
+.portfolio-case-study-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.15rem;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+}
+
+.portfolio-case-study-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .95rem;
+    line-height: 2;
+    letter-spacing: .75px;
+    font-weight: 400;
+    width: 290px;
+    margin: 20px 0 0 0;
+}
+
+.portfolio-case-study-text li{
+    font-size: .95rem;
+}
+
+.list-styling li{
+    text-indent: 0rem;
+    margin: 0 0 10px 1.1em;
+}
+
+.no-margin{
+    margin: 0 0 10px 0;
+}
+
+.light-font{
+    color: rgb(248, 248, 248);
+}
+
+/*< ============  SECTION 1 - PORTFOLIO    ===========================  >*/
+
+
+.section-1-block{
+    grid-area: section-1-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr .7fr .7fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-1-img section-1-img section-1-content section-1-content ";
+    background-color: rgb(78, 22, 52); 
+    height: 120vh;
+}
+
+.section-1-content{
+    grid-area:section-1-content;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 0;
+    margin: 2vw 5vw 2vw 0;
+}
+
+.section-1-img-box{
+    grid-area: section-1-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20% 40px 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.section-1-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 100%;
+    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
+}
+
+
+
+
+/*< ============  SECTION 2 - PORTFOLIO    ===========================  >*/
+
+
+.section-2-block{
+    grid-area: section-2-block;
+    display: grid;
+    grid-template-columns:.7fr .7fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-2-content section-2-content section-2-img section-2-img";
+    background-color: rgb(235, 221, 201); 
+}
+
+.section-2-content{
+    grid-area:section-2-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 5vw;
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.section-2-img-box{
+    grid-area: section-2-img;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10vh 0;
+    height: 100vh;
+    width: 90%;
+    margin: 0;
+}
+
+.section-2-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 75%;
+    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+
+/*< ============  SECTION 3 - PORTFOLIO    ===========================  >*/
+
+
+.section-3-block{
+    grid-area: section-3-block;
+    display: grid;
+    grid-template-columns:1fr 1fr .7fr .7fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-3-img section-3-img section-3-content section-3-content";
+    background-color: rgb(224, 201, 178); 
+}
+
+.section-3-content{
+    grid-area:section-3-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 5vw;
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.section-3-img-box{
+    grid-area: section-3-img;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8vh 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.section-3-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 90%;
+    background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+
+/*< ============  SECTION 4 - PORTFOLIO    ===========================  >*/
+
+.section-4-block{
+    grid-area: section-4-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr .7fr .7fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-4-img section-4-img section-4-content section-4-content ";
+    background-color: rgb(78, 22, 52); 
+    height: 120vh;
+}
+
+.section-4-content{
+    grid-area:section-4-content;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 0;
+    margin: 2vw 5vw 2vw 0;
+}
+
+.section-4-img-box{
+    grid-area: section-4-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20% 30px 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+.section-4-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 100%;
+    background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
+}
+
+
+/*< ============  SECTION 5 - PORTFOLIO    ===========================  >*/
+
+
+.section-5-block{
+    grid-area: section-5-block;
+    display: grid;
+    grid-template-columns:.7fr .7fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-5-content section-5-content section-5-img section-5-img";
+    background-color: rgb(235, 221, 201); 
+}
+
+.section-5-content{
+    grid-area:section-5-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 5vw;
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.section-5-img-box{
+    grid-area: section-5-img;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10vh 0;
+    height: 100vh;
+    width: 90%;
+    margin: 0;
+}
+
+.section-5-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 75%;
+    background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+/*< ============  SECTION 6 - PORTFOLIO    ===========================  >*/
+
+
+.section-6-block{
+    grid-area: section-6-block;
+    display: grid;
+    grid-template-columns:1fr 1fr .7fr .7fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-6-img section-6-img section-6-content section-6-content";
+    background-color: rgb(224, 201, 178); 
+}
+
+.section-6-content{
+    grid-area:section-6-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 5vw;
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.section-6-img-box{
+    grid-area: section-6-img;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8vh 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.section-6-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 90%;
+    background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+
+/*< ============  TABLET - PORTFOLIO    ===========================  >*/
+/*< ============  TABLET - PORTFOLIO    ===========================  >*/
+
+@media only screen and (max-width: 1240px) {
+
+
+
+    .portfolio-landing-image{
+        height: 46vw;
+        max-height: 500px;
+        width: 33vw;
+        background-color: rgb(248, 248, 248);
+        background-image: url(images/walleybanque-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(71, 71, 71))saturate(110%);
+        border-radius: 10px;
     }
     
-    .about-content-container{
+
+    .portfolio-landing-img-box{
+        grid-area: portfolio-landing-img;
         display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        text-align: right;
-    }
-
-    .about-text{
-        color:bisque;
-        width: 80%;
-    }
-
-    .about-button{
-        padding: 8px 10px;
-        border-radius: 3px;
-        width: fit-content;
-        font-size: .85rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        background-color: bisque;
-        color: rgb(53, 12, 35);
-        border: bisque;
-        border-width: 1px;
-        border-style: solid;
-        cursor: pointer;
-        margin: 30px 0 0 0;
-        text-decoration: none;
-    }
-
-/* ======= INDEX - CONTACT PANEL (MOBILE) ================ */
-
-    .contact-panel{
-        grid-area: contact-panel;
-        display: flex;
-        height: 80vh;
-        min-height: 590px;
-        align-items: flex-start;
-        justify-content: left;
-        background-color: bisque;
-        color:black;
-        padding: 70px 5vw 0 5vw;    
-    }
-
-    .contact-content-container{
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .contact-page-setting{
-        display: flex;
-        height: auto;
-        max-height: 550px;
         align-items: top;
-        justify-content: left;
-        background-color: bisque;
-        color:black;
-        padding: 50px 20px 0px 20px;
+        justify-content: flex-end;
+        padding: 30px 3vw 30px 30px;
+        max-height: 100%;
     }
 
-    .contact-btn-list{
+
+}
+
+
+
+@media only screen and (max-width: 896px) {
+
+    .navlink-5,.navlink-6,.navlink-7{
+        display: none;
+    }
+
+
+
+.portfolio-heading-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.portfolio-sub-heading-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: 400;
+    width: 90%;
+    margin: 30px 0 0 0;
+}
+
+.portfolio-case-study-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.portfolio-case-study-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: .75px;
+    font-weight: 400;
+    width: 90%;
+    margin: 10px 0 0 0;
+}
+
+.portfolio-case-study-text li{
+    font-size: 1.2rem;
+}
+
+.list-styling li{
+    text-indent: 0rem;
+    margin: 0 0 10px 1.1em;
+}
+
+.no-margin{
+    margin: 0 0 10px 0;
+}
+
+.light-font{
+    color: rgb(248, 248, 248);
+}
+
+
+
+
+    .portfolio-landing-block{
+        grid-area: portfolio-landing-block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 60vh auto;
+        grid-template-areas: 
+        "nav"
+        "portfolio-landing-img"
+        "portfolio-landing-section";
+        margin: 0 30px;
+        background-color: rgb(252, 240, 220);
+    }
+
+    .portfolio-landing-section{
+        grid-area:portfolio-landing-section;
         display: flex;
+        justify-content: top;
+        align-items: flex-start;
         flex-direction: column;
-        height: 140px;
-        min-height: 140px;
-        justify-content: space-between;
-        margin: 45px 0px 0px 0px;
-        padding: 8px 0px;
+        height: auto;
+        padding: 30px 0 90px 0;
+    }
+    
+    .portfolio-landing-img-box{
+        grid-area: portfolio-landing-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .portfolio-landing-image{
+        height: 80%;
+        width: 80%;
+        background-color: rgb(248, 248, 248);
+        background-image: url(images/walleybanque-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
+        border-radius: 10px;
+        transform: translateZ(0);
     }
 
-.about-page-about{
-    height: 70vh;
+
+/*< ============  SECTION 1 - PORTFOLIO    ===========================  >*/
+
+.section-1-block{
+    grid-area: section-1-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-1-img" 
+    "section-1-content ";
+    background-color: rgb(78, 22, 52); 
+    height: auto;
 }
 
-.about-page-skills{
-    height: 70vh;
-}
-
-
-.walley-height{
-    height: 40vh;
-}
-
-.rmit-height{
-    height: 40vh;
-}
-.radam23-height{
-    height: 40vh;
-}
-
-.rmit-panel{
+.section-1-content{
+    grid-area: section-1-content;
     display: flex;
-    height: 75vh;
-    min-height: 600px;
+    justify-content: top;
     align-items: flex-start;
-    justify-content: left;
-    background-color: bisque;
-    color:black;
-    padding: 8vh 5vw 0 5vw;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* ============== PORTFOLIO DESKTOP ================================== */
-/* ============== PORTFOLIO DESKTOP ================================== */
-/* ============== PORTFOLIO DESKTOP ================================== */
-
-
-/*--------- PORTFOLIO GRID ---------------------------------*/
-
-.portfolio-grid{
+    flex-direction: column;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px auto auto auto auto auto auto;
-    grid-template-areas: 
-    "portfolio-nav"
-    "section1"
-    "section2"
-    "section3"
-    "section4"
-    "section5"
-    "section6"
-    "section7";
-    background-color: rgb(29, 16, 26);
+    margin: 0;
+    padding: 30px 30px 90px 30px;
 }
 
-/*--------- NAV ---------------------------------*/
-
-.portfolio-nav{
-    grid-area: portfolio-nav;
+.section-1-img-box{
+    grid-area: section-1-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(65, 10, 42);
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
 }
 
-.portfolio-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.section-1-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 100%;
+    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
 }
 
-.portfolio-nav li{
-    list-style: none;
-    padding: 8px 16px;
-    margin: 0 0 0 15px;
-    cursor: pointer;
-}
+/*< ============  SECTION 2 - PORTFOLIO    ===========================  >*/
 
-.portfolio-nav  a {
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: rgb(255, 241, 224);
-    text-decoration: none;
-}
-
-.nav-logo-light{
-    height: 20px;
-}
-
-
-/*--------- PORTFOLIO TEXT & STYLES -----------------------*/
-
-.portfolio-pre-title{
-    font-size: .8rem;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(94, 94, 94);
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-.portfolio-lrg-title{
-    font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-weight: 400;
-}
-.portfolio-text{
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-weight: 400;
-    font-size: 1rem;
-    margin: 15px 0 15px 0;
-}
-
-.portfolio-list{
-    margin: 15px 0 15px 0;
-}
-
-.portfolio-list li{
-    list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -1em;
-    padding: 0 0 0 1em;
-}
-
-.list-extra-margin{
-    margin: 0 0 15px 0;
-}
-
-
-/*--------- SECTION LAYOUTS ---------------------------------*/
-/*--------- SECTION LAYOUTS ---------------------------------*/
-
-/*--------- TEXT-CONTAINER GLOBAL EDITS (TABLET)------------------*/
-
-.text-container1{
-    grid-area: text-container1;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding: 80px 30px 0px 30px;
-}
-
-.text-container2{
-    grid-area: text-container2;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding: 0 30px 30px 30px;
-}
-
-
-/*--------- SECTION 1 ------------------*/
-
-.section1{
-    margin-top: 20px;
-    height: 100vh;
-    grid-area: section1;
+.section-2-block{
+    grid-area: section-2-block;
     display: grid;
-    grid-template-columns: .35fr 1fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "text-container1 section-1-img"
-    "text-container2 section-1-img";
-    background-color: bisque;
-}
-
-        /*--------- CONTAINER EDITS ------------------*/
-        .add-padding-desktop{
-            padding: 80px 30px 30px 30px;
-        }
-
-        /*--------- IMAGES ------------------*/
-
-        .section-1-img{
-            grid-area: section-1-img;
-            background-size:190px;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-        }
-
-        .s1-walley{
-            background-image: url(images/walley-logo.svg);
-            background-color: rgb(65, 53, 48);
-        }
-
-        .s1-rmit{
-            background-image: url(images/rmit-logo.svg);
-            background-color: rgb(54, 36, 58);
-        }
-
-        .s1-radam23{
-            background-image: url(images/radam23-logo.svg);
-            background-color: rgb(58, 32, 45);
-        }
-
-
-/*--------- SECTION 2 ------------------*/
-
-.section2{
-    margin-top: 20px;
-    height: 100vh;
-    grid-area: section2;
-    display: grid;
-    grid-template-columns: 1fr .35fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "section-2-img text-container1"
-    "section-2-img text-container2";
-    background-color: bisque;
-}
-
-        /*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-        .section-2-img{
-            grid-area: section-2-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-        }
-
-        .s2-walley{
-            background-image: url(images/melb-walkway-copyright-radam23.png);
-            background-position: 50% 50%;
-        }
-
-        .s2-rmit{
-            background-image: url(images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-
-        .s2-radam23{
-            background-image: url(images/nathan-dumlao-71u2fOofI-U-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-
-
-
-/*--------- SECTION 3 ------------------*/
-
-.section3{
-    margin-top: 20px;
-    height: 90vh;
-    grid-area: section3;
-    display: grid;
-    grid-template-columns: 1fr .35fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "section-3-img text-container1"
-    "section-3-img text-container2";
-    background-color: bisque;
-}
-
-        /*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-        .section-3-img{
-            grid-area: section-3-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-        }
-
-        .s3-walley{
-            background-image: url(images/EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
-            background-position: 50% 50%;
-        }
-
-        .s3-rmit{
-            background-image: url(images/annie-spratt-sggw4-qDD54-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-
-        .s3-radam23{
-            background-image: url(images/brooke-cagle-oTweoxMKdkA-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-
-
-/*--------- SECTION 4 ------------------*/
-
-.section4{
-    margin-top: 20px;
-    height: 100vh;
-    grid-area: section4;
-    display: grid;
-    grid-template-columns: 1fr .35fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "section-4-img text-container1"
-    "section-4-img text-container2";
-    background-color: bisque;
-}
-
-        /*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-        .section-4-img{
-            grid-area: section-4-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            height:100%;
-            width: 100%;
-        }
-        
-        .s4-walley{
-            background-image: url(images/bantersnaps-5U_28ojjgms-unsplash.jpg);
-            background-position: 50% 50%;
-            background-color: rgb(24, 24, 24);
-        }
-        
-        .s4-rmit{
-            background-image: url(images/gabriele-ribeiro-1razH7iMbQo-unsplash.jpg);
-            background-position: 50% 65%;
-            background-color: rgb(24, 24, 24);
-        }
-        
-        .s4-radam23{
-            background-image: url(images/radam23-moodboard-copyright-radam23.png);
-            background-position: 50% 50%;
-            background-size:90%;
-            background-color: rgb(54, 26, 46);
-        }
-
-
-/*--------- SECTION 5 ------------------*/
-
-.section5{
-    margin-top: 20px;
-    height: auto;
-    min-height: 90vh;
-    grid-area: section5;
-    display: grid;
-    grid-template-columns: 1fr .35fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "section-5-img text-container1"
-    "section-5-img text-container2";
-    background-color: bisque;
-}
-
-/*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-        .section-5-img{
-            grid-area: section-5-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            height:100%;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-        }
-        
-        .s5-walley{
-            background-image: url(images/robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-        .s5-rmit{
-            background-image: url(images/israel-andrade-YI_9SivVt_s-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-        .s5-radam23{
-            background-image: url(images/joshua-newton-egK73XCwN8I-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-
-/*--------- SECTION 6 ------------------*/
-
-.section6{
-    margin-top: 20px;
-    height: auto;
-    min-height: 90vh;
-    grid-area: section6;
-    display: grid;
-    grid-template-columns: 1fr .35fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "section-6-img text-container1"
-    "section-6-img text-container2";
-    background-color: bisque;
-}
-
-/*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-
-        .section-6-img{
-            grid-area: section-6-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            height:100%;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-        }
-        
-        .s6-walley{
-            background-image: url(images/cristian-escobar-abkEAOjnY0s-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-        .s6-rmit{
-            background-image: url(images/brooke-cagle-NoRsyXmHGpI-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-        .s6-radam23{
-            background-image: url(images/markus-spiske-hvSr_CVecVI-unsplash.jpg);
-            background-position: 50% 50%;
-        }
-        
-
-
-/*--------- SECTION 7 ------------------*/
-
-.section7{
-    margin-top: 20px;
-    height: 90vh;
-    grid-area: section7;
-    display: grid;
-    grid-template-columns: .35fr 1fr;
-    grid-template-rows:.5fr 1fr;
-    grid-template-areas: 
-    "text-container1 section-7-img"
-    "text-container2 section-7-img";
-    background-color: bisque;
-}
-
-/*--------- CONTAINER EDITS ------------------*/
-
-
-        /*--------- IMAGES ------------------*/
-
-        .section-7-img{
-            grid-area: section-7-img;
-            background-size:cover;
-            background-repeat: no-repeat;
-            height:100%;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-        }
-
-        .s7-walley{
-            background-image: url(images/Walleybanque-App-\(desktop\)-copyright-rAdam23.png);
-            background-position: 50% 50%;
-            background-size:100%;
-            background-color: rgb(66, 56, 49);
-        }
-
-        .s7-rmit{
-            background-image: url(images/rmit-final-prototype-copyright-radam23.png);
-            background-position: 50% 50%;
-            background-size:75%;
-            background-color: rgb(53, 31, 50);
-        }
-
-        .s7-radam23{
-            background-image: url(images/radam23-website-screenshot-copyright-radam23.png);
-            background-position: 50% 50%;
-            background-size:90%;
-            background-color: rgb(53, 31, 50);
-        }
-
-
-
-
-
-/* ============== TABLET PORTFOLIO ================================== */
-/* ============== TABLET PORTFOLIO ================================== */
-/* ============== TABLET PORTFOLIO ================================== */
-
-@media only screen and (max-width: 1024px) {
-
-.portfolio-off{
-    display: none;
-}
-
-/*--------- TEXT-CONTAINER GLOBAL EDITS (TABLET) ------------------*/
-
-.text-container1{
-    padding: 50px 30px 0px 30px;
-}
-
-/*<------ SECTION 1 (TABLET)  ------------>*/
-
-.section1{
-    height: auto;
-    grid-area: section1;
-    grid-template-columns: 1fr;
-    grid-template-rows:80vh auto auto;
-    grid-template-areas: 
-    "section-1-img"
-    "text-container1"
-    "text-container2";
-}
-
-        .add-padding-mobile{
-            padding: 50px 30px 30px 30px;
-        }
-
-/*<------ SECTION 2 (TABLET)  ------------>*/
-
-.section2{
-    height: auto;
-    grid-area: section2;
-    grid-template-columns: 1fr;
-    grid-template-rows:80vh auto auto;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
     grid-template-areas: 
     "section-2-img"
-    "text-container1"
-    "text-container2";
+    "section-2-content";
+    background-color: rgb(235, 221, 201); 
 }
-        /*--------- CONTAINER EDITS ------------------*/
 
+.section-2-content{
+    grid-area: section-2-content;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 30px 90px 30px;
+    margin: 0;
+}
 
-/*<------ SECTION 3 (TABLET)  ------------>*/
+.section-2-img-box{
+    grid-area: section-2-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 
-    .section3{
-        height: auto;
-        grid-area: section3;
-        grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
-        grid-template-areas: 
-        "section-3-img"
-        "text-container1"
-        "text-container2";
-    }
-        /*--------- CONTAINER EDITS ------------------*/
-
-/*<------ SECTION 4 (TABLET)  ------------>*/
-
-    .section4{
-        height: auto;
-        grid-area: section4;
-        grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
-        grid-template-areas: 
-        "section-4-img"
-        "text-container1"
-        "text-container2";
-    }
-
-    .section5{
-        height: auto;
-        grid-area: section5;
-        grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
-        grid-template-areas: 
-        "section-5-img"
-        "text-container1"
-        "text-container2";
-    }
-    
-    .section6{
-        height: auto;
-        grid-area: section6;
-        grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
-        grid-template-areas: 
-        "section-6-img"
-        "text-container1"
-        "text-container2";
-    }
-
-    .section7{
-        height: auto;
-        grid-area: section7;
-        grid-template-columns: 1fr;
-        grid-template-rows:80vh auto auto;
-        grid-template-areas: 
-        "section-7-img"
-        "text-container1"
-        "text-container2";
-    }
-
-
+.section-2-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
 }
 
 
-/* ============== MOBILE PORTFOLIO ================================== */
-/* ============== MOBILE PORTFOLIO ================================== */
-/* ============== MOBILE PORTFOLIO ================================== */
+/*< ============  SECTION 3 - PORTFOLIO    ===========================  >*/
 
-@media only screen and (max-width: 420px) {
+.section-3-block{
+    grid-area: section-3-block;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-3-img"
+    "section-3-content";
+    background-color: rgb(224, 201, 178);
+}
 
-    .portfolio-off{
-        display: none;
-    }
+.section-3-content{
+    grid-area: section-3-content;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 30px 90px 30px;
+    margin: 0;
+}
 
-    .portfolio-nav li{
-        display: none;
-    }
+.section-3-img-box{
+    grid-area: section-3-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 
-    /*<------ SECTION 1 (MOBILE)  ------------>*/
+.section-3-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
 
-        .section-1-img{
-            grid-area: section-1-img;
-            background-size:160px;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-        }
+/*< ============  SECTION 4 - PORTFOLIO    ===========================  >*/
 
-        .s7-walley{
-            background-image: url(images/Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
-            background-position: 50% 50%;
-            background-size: 85%;
-            background-color: rgb(66, 56, 49);
-        }
+.section-4-block{
+    grid-area: section-4-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-4-img" 
+    "section-4-content ";
+    background-color: rgb(78, 22, 52); 
+    height: auto;
+}
 
+.section-4-content{
+    grid-area: section-4-content;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding: 30px 30px 90px 30px;
+}
+
+.section-4-img-box{
+    grid-area: section-4-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.section-4-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 440px;
+    width: 100%;
+    background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
+}
+
+
+/*< ============  SECTION 5 - PORTFOLIO    ===========================  >*/
+
+.section-5-block{
+    grid-area: section-5-block;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-5-img"
+    "section-5-content";
+    background-color: rgb(235, 221, 201); 
+}
+
+.section-5-content{
+    grid-area: section-5-content;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 30px 90px 30px;
+    margin: 0;
+}
+
+.section-5-img-box{
+    grid-area: section-5-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.section-5-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
     
+}
+
+
+/*< ============  SECTION 6 - PORTFOLIO    ===========================  >*/
+
+.section-6-block{
+    grid-area: section-6-block;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section-6-img"
+    "section-6-content";
+    background-color: rgb(224, 201, 178);
+}
+
+.section-6-content{
+    grid-area: section-6-content;
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 30px 90px 30px;
+    margin: 0;
+}
+
+.section-6-img-box{
+    grid-area: section-6-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 30px 60px 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.section-6-image-walley{
+    height: 100%;
+    max-height: 100%;
+    min-height: 90vh;
+    width: 100%;
+    background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+
+
+
+}
