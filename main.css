@@ -889,7 +889,7 @@ nav a:hover{
     }
 
  
-    /*< ====  LANDING SECTION MOBILE  ===========================  >*/
+/*< ====  LANDING SECTION MOBILE  ===========================  >*/
 
     .landing-section{
         grid-area:landing-section;
@@ -991,7 +991,6 @@ nav a:hover{
     }
 
 
-
     /*< =======  UX UI SECTION MOBILE  ===========================  >*/
 
     .ux-ui-block{
@@ -1021,9 +1020,6 @@ nav a:hover{
         color: rgb(243, 230, 213);
         padding-bottom: 10px;
     }
-
-
-
 
 
     /*< =======  ABOUT SECTION MOBILE  ===========================  >*/
@@ -1058,12 +1054,6 @@ nav a:hover{
         border-radius: 10px;
     }
 
-
-
-
-
-
-
     /*< =======  CONTACT SECTION MOBILE ===========================  >*/
 
     .contact-block{
@@ -1072,7 +1062,7 @@ nav a:hover{
         flex-direction: column;
         justify-content: center;
         background-color: rgb(233, 210, 182); 
-        height: auto;
+        min-height: 650px;
     }
 
     .contact-section{
