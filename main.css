@@ -2098,48 +2098,6 @@ nav a{
 
     /*< ============  SECTIONS    ===========================  >*/
 
-    
-    .section-1-img-box,.section-2-img-box,.section-3-img-box,.section-4-img-box,.section-5-img-box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 30px 0 60px 0;
-        height: 60vh;
-        width: 100%;
-    }
-
-    .section-1-image-walley,.section-2-image-walley,.section-3-image-walley,.section-4-image-walley,.section-5-image-walley{
-        min-height: 300px;
-    }
-
-    .section-6-block{
-        grid-area: section-6-block;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50vh auto;
-        grid-template-areas: 
-        "section-6-img" 
-        "section-6-content";
-        background-color: rgb(224, 201, 178); 
-        padding: 5vw;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-6-image-walley{
-        height: 100%;
-        min-height: 700px;
-        width: 100%;
-        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
-        background-repeat: no-repeat;
-        background-size: 300px;
-        background-position: 50% 50%;
-        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
-        border-radius: 10px;
-        transform: translateZ(0);
-    }
-
     .portfolio-landing-image{
         height: 70vw;
         min-height: 300px;
@@ -2156,6 +2114,61 @@ nav a{
         border-radius: 10px;
         transform: translateZ(0);
     }
+
+
+    .section-1-img-box,.section-2-img-box,.section-3-img-box,.section-4-img-box,.section-5-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        margin: 30px 0 60px 0;
+        height: 60vh;
+        width: 100%;
+    }
+
+    .section-1-image-walley,.section-2-image-walley,.section-3-image-walley,.section-4-image-walley,.section-5-image-walley{
+        min-height: 300px;
+    }
+
+    .section-6-block{
+        grid-area: section-6-block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "section-6-img" 
+        "section-6-content";
+        background-color: rgb(224, 201, 178); 
+        padding: 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-6-img-box{
+        grid-area: section-6-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .section-6-image-walley{
+        height: 100%;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+
+  
     
 
 
