@@ -1136,7 +1136,7 @@ nav a:hover{
 .portfolio-page-grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: 
     "portfolio-landing-block"
     "section-1-block"
@@ -1470,7 +1470,7 @@ nav a:hover{
     align-items: flex-start;
     flex-direction: column;
     padding: 0 0 0 5vw;
-    margin: 5vw 5vw 5vw 5vw;
+    margin: 5vw;
 }
 
 .section-5-img-box{
@@ -1480,13 +1480,13 @@ nav a:hover{
     justify-content: center;
     padding: 0;
     height: 100%;
-    max-height: 700px;
     width: 100%;
     margin: 0;
 }
 
 .section-5-image-walley{
     height: 80%;
+    min-height: 700px;
     width: 80%;
     background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
     background-repeat: no-repeat;
@@ -1722,9 +1722,9 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 90px 0;
-    height: 80vh;
+    padding: 60px 0;
+    margin: 0;
+    height: auto;
     width: 100%;
 }
 
@@ -1773,9 +1773,9 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 90px 0;
-    height: 80vh;
+    padding: 60px 0;
+    margin: 0;
+    height: auto;
     width: 100%;
 }
 
@@ -1824,9 +1824,9 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
-        margin: 90px 0;
-        height: 80vh;
+        padding: 60px 0;
+        margin: 0;
+        height: auto;
         width: 100%;
     }
     
@@ -1876,9 +1876,9 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 90px 0;
-    height: 80vh;
+    padding: 60px 0;
+    margin: 0;
+    height: auto;
     width: 100%;
 }
 
@@ -1927,9 +1927,10 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
-        margin: 90px 0;
-        height: 80vh;
+        padding: 60px 0;
+        margin: 0;
+        height: auto;
+        max-height: auto;
         width: 100%;
     }
     
@@ -1978,9 +1979,9 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 60px 0;
         margin: 0;
-        height: 80vh;
+        height: auto;
         width: 100%;
     }
     
@@ -2007,11 +2008,11 @@ nav a{
 
     .section-6-image-walley{
         height: 100%;
-        min-height: 700px;
+        min-height: 1100px;
         width: 100%;
         background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
         background-repeat: no-repeat;
-        background-size: 500px;
+        background-size: 700px;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
@@ -2151,17 +2152,17 @@ nav a{
         justify-content: center;
         padding: 0;
         margin: 0;
-        height: 80vh;
+        height: auto;
         width: 100%;
     }
     
     .section-6-image-walley{
         height: 100%;
-        min-height: 700px;
+        min-height: 1000px;
         width: 100%;
         background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
         background-repeat: no-repeat;
-        background-size: 300px;
+        background-size: 110%;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
