@@ -1154,12 +1154,13 @@ nav a:hover{
     grid-area: portfolio-landing-block;
     display: grid;
     grid-template-columns: 380px 1fr 1fr 1fr;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 10vh 85vh;
     grid-template-areas: 
     "nav nav nav nav"
     "portfolio-landing-section portfolio-landing-img portfolio-landing-img portfolio-landing-img";
     margin: 0 5vw;
     background-color: rgb(252, 240, 220);
+    min-height: 800px;
 }
 
 .portfolio-landing-section{
@@ -1176,15 +1177,14 @@ nav a:hover{
     grid-area: portfolio-landing-img;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    padding: 30px 30px 30px 100px;
+    justify-content: flex-end;
+    padding: 30px 30px 0 30px;
     height: 100%;
 }
 
 .portfolio-landing-image{
-    height: 500px;
-    width: 500px;
-    min-width: 400px;
+    height: 37vw;
+    width: 37vw;
     background-color: rgb(248, 248, 248);
     background-image: url(images/walleybanque-logo.svg);
     background-repeat: no-repeat;
@@ -1253,6 +1253,8 @@ nav a:hover{
     color: rgb(248, 248, 248);
 }
 
+
+
 /*< ============  SECTION 1 - PORTFOLIO    ===========================  >*/
 
 
@@ -1264,7 +1266,9 @@ nav a:hover{
     grid-template-areas: 
     "section-1-img section-1-img section-1-content section-1-content ";
     background-color: rgb(78, 22, 52); 
-    height: 100vh;
+    height: auto;
+    min-height: 900px;
+    padding: 30px 0;
 }
 
 .section-1-content{
@@ -1273,8 +1277,8 @@ nav a:hover{
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    padding: 0;
-    margin: 2vw 5vw 2vw 0;
+    padding: 30px 0;
+    margin: 0;
 }
 
 .section-1-img-box{
@@ -1282,21 +1286,20 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
-    height: 100%;
-    width: 100%;
+    padding: 5vh 9vw 5vh 0;
     margin: 0;
 }
 
 .section-1-image-walley{
-    height: 500px;
-    width:500px;
+    height: 100%;
+    width: 100%;
     background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 0px;
+    transform: translateZ(0);
 }
 
 
@@ -1313,7 +1316,7 @@ nav a:hover{
     grid-template-areas: 
     "section-2-content section-2-content section-2-img section-2-img";
     background-color: rgb(235, 221, 201); 
-    height: 100vh;
+    padding: 50px 30px 50px 0;
 }
 
 .section-2-content{
@@ -1329,19 +1332,17 @@ nav a:hover{
 .section-2-img-box{
     grid-area: section-2-img;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 10vh 0;
-    height: 100vh;
+    padding: 0;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
 
 .section-2-image-walley{
-    height: 100%;
-    max-height: 100%;
-    min-height: 440px;
-    width: 75%;
+    height: 80%;
+    width: 80%;
     background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1352,18 +1353,17 @@ nav a:hover{
 }
 
 
-
 /*< ============  SECTION 3 - PORTFOLIO    ===========================  >*/
-
 
 .section-3-block{
     grid-area: section-3-block;
     display: grid;
-    grid-template-columns:1fr 1fr .7fr .7fr ;
+    grid-template-columns:1fr 1fr .7fr .7fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "section-3-img section-3-img section-3-content section-3-content";
     background-color: rgb(224, 201, 178); 
+    padding: 50px 30px 50px 0;
 }
 
 .section-3-content{
@@ -1372,26 +1372,24 @@ nav a:hover{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 0 0 5vw;
+    padding: 0;
     margin: 5vw 5vw 5vw 5vw;
 }
 
 .section-3-img-box{
     grid-area: section-3-img;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 8vh 0;
-    height: 100vh;
+    padding: 0;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
 
 .section-3-image-walley{
-    height: 100%;
-    max-height: 100%;
-    min-height: 440px;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1400,6 +1398,7 @@ nav a:hover{
     border-radius: 10px;
     transform: translateZ(0);
 }
+
 
 
 
@@ -1413,7 +1412,9 @@ nav a:hover{
     grid-template-areas: 
     "section-4-img section-4-img section-4-content section-4-content ";
     background-color: rgb(78, 22, 52); 
-    height: 120vh;
+    height: auto;
+    min-height: 900px;
+    padding: 30px 0;
 }
 
 .section-4-content{
@@ -1422,8 +1423,8 @@ nav a:hover{
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    padding: 0;
-    margin: 2vw 5vw 2vw 0;
+    padding: 30px 0;
+    margin: 0;
 }
 
 .section-4-img-box{
@@ -1431,17 +1432,12 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 30px 20% 30px 0;
-    height: 100%;
-    width: 100%;
+    padding: 5vh 9vw 5vh 0;
     margin: 0;
 }
 
-
 .section-4-image-walley{
     height: 100%;
-    max-height: 100%;
-    min-height: 440px;
     width: 100%;
     background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
     background-repeat: no-repeat;
@@ -1450,6 +1446,7 @@ nav a:hover{
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 0px;
 }
+
 
 
 /*< ============  SECTION 5 - PORTFOLIO    ===========================  >*/
@@ -1463,6 +1460,7 @@ nav a:hover{
     grid-template-areas: 
     "section-5-content section-5-content section-5-img section-5-img";
     background-color: rgb(235, 221, 201); 
+    padding: 50px 30px 50px 0;
 }
 
 .section-5-content{
@@ -1478,19 +1476,18 @@ nav a:hover{
 .section-5-img-box{
     grid-area: section-5-img;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 10vh 0;
-    height: 100vh;
-    width: 90%;
+    padding: 0;
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
     margin: 0;
 }
 
 .section-5-image-walley{
-    height: 100%;
-    max-height: 100%;
-    min-height: 440px;
-    width: 75%;
+    height: 80%;
+    width: 80%;
     background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1507,11 +1504,12 @@ nav a:hover{
 .section-6-block{
     grid-area: section-6-block;
     display: grid;
-    grid-template-columns:1fr 1fr .7fr .7fr ;
+    grid-template-columns:1fr 1fr .6fr .6fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "section-6-img section-6-img section-6-content section-6-content";
     background-color: rgb(224, 201, 178); 
+    padding: 50px 30px 50px 0;
 }
 
 .section-6-content{
@@ -1520,29 +1518,27 @@ nav a:hover{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 0 0 5vw;
-    margin: 5vw 5vw 5vw 5vw;
+    padding: 0;
+    margin: 5vw 5vw 5vw 8vw;
 }
 
 .section-6-img-box{
     grid-area: section-6-img;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding: 8vh 0;
-    height: 100vh;
+    padding: 0;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
 
 .section-6-image-walley{
-    height: 100%;
-    max-height: 100%;
-    min-height: 440px;
-    width: 70%;
-    background-image:url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+    height: 80%;
+    width: 80%;
+    background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 10px;
@@ -1550,4 +1546,597 @@ nav a:hover{
 }
 
 
+@media only screen and (max-width: 1423px) {
 
+    .section-6-image-walley{
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-size: 430px;
+    }
+
+    .section-6-content{
+        grid-area:section-6-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 5vw 5vw 5vw 0;
+    }
+    
+}
+
+
+
+
+
+/*< ============  SECTION 6 - PORTFOLIO - MOBILE    ===========================  >*/
+
+
+@media only screen and (max-width: 1150px) {
+
+
+/*< ============ SECTION FONTS    ===========================  >*/
+
+.portfolio-heading-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.portfolio-sub-heading-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.35rem;
+    line-height: 2;
+    font-weight: 400;
+    width: 90%;
+    margin: 30px 0 0 0;
+}
+
+
+.portfolio-case-study-title{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.15rem;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+}
+
+.portfolio-case-study-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.35rem;
+    line-height: 2;
+    letter-spacing: .75px;
+    font-weight: 400;
+    width: 90%;
+    margin: 20px 0 0 0;
+}
+
+.portfolio-case-study-text li{
+    font-size: 1.35rem;
+}
+
+/*< ============  NAVBAR FONTS & IMGS    ===========================  >*/
+
+nav a{
+    color: rgb(160, 115, 102);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.nav-logo{
+    height: 24px;
+}
+
+
+/*< ============  LANDING SECTION    ===========================  >*/
+
+.portfolio-landing-block{
+    grid-area: portfolio-landing-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto auto;
+    grid-template-areas: 
+    "nav"
+    "portfolio-landing-img"
+    "portfolio-landing-section";
+    margin: 0 5vw;
+    background-color: rgb(252, 240, 220);
+    min-height: auto;
+}
+
+
+.portfolio-landing-img-box{
+    grid-area: portfolio-landing-img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    margin: 90px 0;
+    height: auto;
+    width: 100%;
+}
+
+.portfolio-landing-section{
+    grid-area:portfolio-landing-section;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin: 20px 5vw 120px 5vw;
+}
+
+.portfolio-landing-image{
+    height: 70vw;
+    min-height: 300px;
+    max-height: 570px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 570px;
+    background-color: rgb(248, 248, 248);
+    background-image: url(images/walleybanque-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+/*< ============  SECTION 1 - PORTFOLIO    ===========================  >*/
+
+
+.section-1-block{
+    grid-area: section-1-block;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "section-1-img"
+    "section-1-content";
+    background-color: rgb(78, 22, 52); 
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-content{
+    grid-area:section-1-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 5vw;
+}
+
+.section-1-img-box{
+    grid-area: section-1-img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 90px 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.section-1-image-walley{
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
+    transform: translateZ(0);
+}
+
+
+/*< ============  SECTION 2 - PORTFOLIO    ===========================  >*/
+
+.section-2-block{
+    grid-area: section-2-block;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "section-2-img"
+    "section-2-content";
+    background-color: rgb(235, 221, 201); 
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-content{
+    grid-area:section-2-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 5vw;
+}
+
+.section-2-img-box{
+    grid-area: section-2-img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 90px 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.section-2-image-walley{
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 43% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 10px;
+    transform: translateZ(0);
+}
+
+
+/*< ============  SECTION 3 - PORTFOLIO    ===========================  >*/
+
+    .section-3-block{
+        grid-area: section-3-block;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "section-3-img"
+        "section-3-content";
+        background-color: rgb(224, 201, 178);  
+        padding: 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-3-content{
+        grid-area:section-3-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 5vw;
+    }
+    
+    .section-3-img-box{
+        grid-area: section-3-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 90px 0;
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .section-3-image-walley{
+        height: 100%;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+
+
+/*< ============  SECTION 4 - PORTFOLIO    ===========================  >*/
+
+
+.section-4-block{
+    grid-area: section-4-block;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "section-4-img"
+    "section-4-content";
+    background-color: rgb(78, 22, 52); 
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4-content{
+    grid-area:section-4-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 5vw;
+}
+
+.section-4-img-box{
+    grid-area: section-4-img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 90px 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.section-4-image-walley{
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+    border-radius: 0px;
+    transform: translateZ(0);
+}
+
+
+/*< ============  SECTION 5 - PORTFOLIO    ===========================  >*/
+
+    .section-5-block{
+        grid-area: section-5-block;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "section-5-img"
+        "section-5-content";
+        background-color: rgb(235, 221, 201); 
+        padding: 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-5-content{
+        grid-area:section-5-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 5vw;
+    }
+    
+    .section-5-img-box{
+        grid-area: section-5-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 90px 0;
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .section-5-image-walley{
+        height: 100%;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+
+    
+/*< ============  SECTION 6 - PORTFOLIO    ===========================  >*/
+
+    .section-6-block{
+        grid-area: section-6-block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80vh auto;
+        grid-template-areas: 
+        "section-6-img" 
+        "section-6-content";
+        background-color: rgb(224, 201, 178); 
+        padding: 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-6-content{
+        grid-area: section-6-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        margin: 5vw;
+    }
+    
+    .section-6-img-box{
+        grid-area: section-6-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .section-6-image-walley{
+        height: 100%;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+    
+    
+
+
+}
+
+
+@media only screen and (max-width: 875px) {
+
+    .section-6-image-walley{
+        height: 100%;
+        min-height: 700px;
+        width: 100%;
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-repeat: no-repeat;
+        background-size: 500px;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+}
+    
+
+
+    @media only screen and (max-width: 630px) {
+
+
+    /*< ============  NAV    ===========================  >*/
+        
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            width: 80px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+
+    /*< ============  NAVBAR FONTS & IMGS    ===========================  >*/
+
+    nav a{
+        color: rgb(160, 115, 102);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+
+    .nav-logo{
+        height: 26px;
+    }
+
+    .navlink-5,.navlink-6,.navlink-7{
+        display: none;
+    }
+
+
+
+    /*< ============  FONTS    ===========================  >*/
+
+
+    .portfolio-heading-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+    
+    .portfolio-sub-heading-text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+        line-height: 2;
+        font-weight: 400;
+        width: 90%;
+        margin: 30px 0 0 0;
+    }
+
+
+    .portfolio-case-study-title{
+        font-family: 'Anton', sans-serif;
+        font-size: 2.15rem;
+        font-weight: 100;
+        line-height: 1.5;
+        letter-spacing: .75px;
+        text-transform: uppercase;
+    }
+
+    .portfolio-case-study-text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        line-height: 2;
+        letter-spacing: .75px;
+        font-weight: 400;
+        width: 290px;
+        margin: 20px 0 0 0;
+    }
+
+    .portfolio-case-study-text li{
+        font-size: 1rem;
+    }
+
+
+/*< ============  LANDING - PORTFOLIO    ===========================  >*/
+
+    .portfolio-landing-image{
+        height: 70vw;
+        min-height: 300px;
+        max-height: 570px;
+        width: 100%;
+        min-width: 200px;
+        max-width: 570px;
+        background-color: rgb(248, 248, 248);
+        background-image: url(images/walleybanque-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+    
+
+/*< ============  SECTION 6 - PORTFOLIO    ===========================  >*/
+
+    .section-6-image-walley{
+        height: 100%;
+        min-height: auto;
+        width: 100%;
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+}
+    
+
+    }
+
+    
