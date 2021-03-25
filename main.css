@@ -1579,7 +1579,7 @@ nav a:hover{
 
 .portfolio-heading-title{
     font-family: 'Anton', sans-serif;
-    font-size: 3.9rem;
+    font-size: 3.2rem;
     font-weight: 300;
     line-height: 1.5;
     text-transform: uppercase;
@@ -1587,7 +1587,7 @@ nav a:hover{
 
 .portfolio-sub-heading-text{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     line-height: 2;
     font-weight: 400;
     width: 90%;
@@ -1597,7 +1597,7 @@ nav a:hover{
 
 .portfolio-case-study-title{
     font-family: 'Anton', sans-serif;
-    font-size: 3.15rem;
+    font-size: 2.8rem;
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: .75px;
@@ -1606,7 +1606,7 @@ nav a:hover{
 
 .portfolio-case-study-text{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     line-height: 2;
     letter-spacing: .75px;
     font-weight: 400;
@@ -1615,23 +1615,34 @@ nav a:hover{
 }
 
 .portfolio-case-study-text li{
-    font-size: 1.35rem;
+    font-size: 1.1rem;
 }
 
 /*< ============  NAVBAR FONTS & IMGS    ===========================  >*/
 
+nav{
+    min-height: 65px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 nav a{
     color: rgb(160, 115, 102);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: .95rem;
     font-weight: 600;
     letter-spacing: .5px;
 }
 
 .nav-logo{
-    height: 24px;
+    height: 20px;
 }
-
 
 /*< ============  LANDING SECTION    ===========================  >*/
 
@@ -1655,7 +1666,7 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10vw;
+    padding: 0 5vw;
     margin: 90px 0;
     height: auto;
     width: 100%;
@@ -1669,20 +1680,20 @@ nav a{
     flex-direction: column;
     height: auto;
     padding: 0;
-    margin: 20px 5vw 120px 5vw;
+    margin: 40px 5vw 120px 5vw;
 }
 
 .portfolio-landing-image{
     height: 70vw;
     min-height: 300px;
-    max-height: 570px;
+    max-height: 490px;
     width: 100%;
-    min-width: 200px;
-    max-width: 570px;
+    min-width: 100%;
+    max-width: 490px;
     background-color: rgb(248, 248, 248);
     background-image: url(images/walleybanque-logo.svg);
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 350px;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
     border-radius: 10px;
@@ -1702,7 +1713,7 @@ nav a{
     "section-1-img"
     "section-1-content";
     background-color: rgb(78, 22, 52); 
-    padding: 5vw;
+    padding: 0 5vw 0 0;
     justify-content: center;
     align-items: center;
 }
@@ -1713,16 +1724,16 @@ nav a{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0;
+    padding: 0 5vw 60px 5vw;
     margin: 5vw;
 }
 
 .section-1-img-box{
     grid-area: section-1-img;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0;
+    align-items: top;
+    justify-content: flex-start;
+    padding: 90px 90px 90px 0;
     margin: 0;
     height: auto;
     width: 100%;
@@ -1730,7 +1741,7 @@ nav a{
 
 .section-1-image-walley{
     height: 100%;
-    min-height: 700px;
+    min-height: 800px;
     width: 100%;
     background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
     background-repeat: no-repeat;
@@ -1773,7 +1784,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
+    padding: 60px 5vw;
     margin: 0;
     height: auto;
     width: 100%;
@@ -1824,7 +1835,7 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 60px 0;
+        padding: 60px 5vw;
         margin: 0;
         height: auto;
         width: 100%;
@@ -1856,7 +1867,7 @@ nav a{
     "section-4-img"
     "section-4-content";
     background-color: rgb(78, 22, 52); 
-    padding: 5vw;
+    padding: 0 5vw 0 0;
     justify-content: center;
     align-items: center;
 }
@@ -1867,16 +1878,16 @@ nav a{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0;
+    padding: 0 5vw 60px 5vw;
     margin: 5vw;
 }
 
 .section-4-img-box{
     grid-area: section-4-img;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0;
+    align-items: top;
+    justify-content: flex-start;
+    padding: 90px 90px 90px 0;
     margin: 0;
     height: auto;
     width: 100%;
@@ -1884,7 +1895,7 @@ nav a{
 
 .section-4-image-walley{
     height: 100%;
-    min-height: 700px;
+    min-height: 800px;
     width: 100%;
     background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
     background-repeat: no-repeat;
@@ -1925,9 +1936,9 @@ nav a{
     .section-5-img-box{
         grid-area: section-5-img;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 0;
+        align-items: top;
+        justify-content: flex-start;
+        padding: 60px 5vw;
         margin: 0;
         height: auto;
         max-height: auto;
@@ -1954,7 +1965,7 @@ nav a{
         grid-area: section-6-block;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80vh auto;
+        grid-template-rows: auto auto;
         grid-template-areas: 
         "section-6-img" 
         "section-6-content";
@@ -2006,13 +2017,33 @@ nav a{
 
 @media only screen and (max-width: 875px) {
 
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 80px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a{
+        color: rgb(160, 115, 102);
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+
+    .nav-logo{
+        height: 20px;
+    }
+
     .section-6-image-walley{
         height: 100%;
-        min-height: 1100px;
+        min-height: 900px;
         width: 100%;
         background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
         background-repeat: no-repeat;
-        background-size: 700px;
+        background-size: 600px;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
@@ -2064,7 +2095,7 @@ nav a{
     
     .portfolio-sub-heading-text{
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 2;
         font-weight: 400;
         width: 90%;
