@@ -2026,13 +2026,13 @@ nav a{
 
     /*< ============  NAV    ===========================  >*/
         
-        nav ul{
-            display: flex;
-            flex-direction: row;
-            width: 80px;
-            justify-content: flex-end;
-            align-items: center;
-        }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 80px;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
 
     /*< ============  NAVBAR FONTS & IMGS    ===========================  >*/
@@ -2040,13 +2040,13 @@ nav a{
     nav a{
         color: rgb(160, 115, 102);
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
         letter-spacing: .5px;
     }
 
     .nav-logo{
-        height: 26px;
+        height: 20px;
     }
 
     .navlink-5,.navlink-6,.navlink-7{
@@ -2120,7 +2120,73 @@ nav a{
     }
     
 
-/*< ============  SECTION 6 - PORTFOLIO    ===========================  >*/
+/*< ============   PORTFOLIO SECTIONS    ===========================  >*/
+  
+
+    .section-1-image-walley{
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 0px;
+        transform: translateZ(0);
+    }
+
+    .section-2-image-walley{
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 43% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+    
+    .section-3-image-walley{
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
+
+    .section-4-image-walley{
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 0px;
+        transform: translateZ(0);
+    }
+
+    .section-5-image-walley{
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
+        border-radius: 10px;
+        transform: translateZ(0);
+    }
 
     .section-6-image-walley{
         height: 100%;
