@@ -1621,7 +1621,8 @@ nav a:hover{
 /*< ============  NAVBAR FONTS & IMGS    ===========================  >*/
 
 nav{
-    min-height: 65px;
+    min-height: 60px;
+    max-height: 90px;
 }
 
 nav ul{
@@ -1680,7 +1681,7 @@ nav a{
     flex-direction: column;
     height: auto;
     padding: 0;
-    margin: 40px 5vw 120px 5vw;
+    margin: 0 5vw 10vw 5vw;
 }
 
 .portfolio-landing-image{
@@ -1725,7 +1726,7 @@ nav a{
     align-items: flex-start;
     flex-direction: column;
     padding: 0;
-    margin: 5vw;
+    margin: 5vw 5vw 10vw 5vw;
 }
 
 .section-1-img-box{
@@ -1776,7 +1777,7 @@ nav a{
     align-items: flex-start;
     flex-direction: column;
     padding: 0;
-    margin: 5vw;
+    margin: 5vw 5vw 10vw 5vw;
 }
 
 .section-2-img-box{
@@ -1827,7 +1828,7 @@ nav a{
         align-items: flex-start;
         flex-direction: column;
         padding: 0;
-        margin: 5vw;
+        margin: 5vw 5vw 10vw 5vw;
     }
     
     .section-3-img-box{
@@ -1879,7 +1880,7 @@ nav a{
     align-items: flex-start;
     flex-direction: column;
     padding: 0;
-    margin: 5vw;
+    margin: 5vw 5vw 10vw 5vw;
 }
 
 .section-4-img-box{
@@ -1930,7 +1931,7 @@ nav a{
         align-items: flex-start;
         flex-direction: column;
         padding: 0;
-        margin: 5vw;
+        margin: 5vw 5vw 10vw 5vw;
     }
     
     .section-5-img-box{
@@ -1982,7 +1983,7 @@ nav a{
         align-items: flex-start;
         flex-direction: column;
         padding: 0;
-        margin: 5vw;
+        margin: 5vw 5vw 10vw 5vw;
     }
     
     .section-6-img-box{
@@ -2151,10 +2152,11 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 60px 30px;
-        margin: 0;
-        height: 60vh;
-        min-height: 700px;
+        padding: 0 15px;
+        margin: 60px 0;
+        height: 55vh;
+        max-height: 500px;
+        min-height: auto;
         width: 100%;
     }
 
