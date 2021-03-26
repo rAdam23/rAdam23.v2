@@ -401,7 +401,7 @@ nav a:hover{
         background-image: url(images/pancake-full-stack-copyright-rAdam23.svg);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: 0% 90%;
+        background-position: 0% 85%;
         filter: drop-shadow(0px 0px 0px rgb(71, 71, 71))saturate(100%);
         border-radius: 10px;
     }
@@ -1635,7 +1635,7 @@ nav ul{
 nav a{
     color: rgb(160, 115, 102);
     text-decoration: none;
-    font-size: .95rem;
+    font-size: .9rem;
     font-weight: 600;
     letter-spacing: .5px;
 }
@@ -1666,10 +1666,10 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 5vw;
-    margin: 90px 0;
     height: auto;
     width: 100%;
+    padding: 0 5vw;
+    margin: 90px 0;
 }
 
 .portfolio-landing-section{
@@ -1713,7 +1713,7 @@ nav a{
     "section-1-img"
     "section-1-content";
     background-color: rgb(78, 22, 52); 
-    padding: 0 5vw 0 0;
+    padding: 5vw;
     justify-content: center;
     align-items: center;
 }
@@ -1724,16 +1724,16 @@ nav a{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 5vw 60px 5vw;
+    padding: 0;
     margin: 5vw;
 }
 
 .section-1-img-box{
     grid-area: section-1-img;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: flex-start;
-    padding: 90px 90px 90px 0;
+    padding: 90px;
     margin: 0;
     height: auto;
     width: 100%;
@@ -1741,7 +1741,7 @@ nav a{
 
 .section-1-image-walley{
     height: 100%;
-    min-height: 800px;
+    min-height: 700px;
     width: 100%;
     background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
     background-repeat: no-repeat;
@@ -1867,7 +1867,7 @@ nav a{
     "section-4-img"
     "section-4-content";
     background-color: rgb(78, 22, 52); 
-    padding: 0 5vw 0 0;
+    padding: 5vw;
     justify-content: center;
     align-items: center;
 }
@@ -1878,16 +1878,16 @@ nav a{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 5vw 60px 5vw;
+    padding: 0;
     margin: 5vw;
 }
 
 .section-4-img-box{
     grid-area: section-4-img;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: flex-start;
-    padding: 90px 90px 90px 0;
+    padding: 90px;
     margin: 0;
     height: auto;
     width: 100%;
@@ -1895,7 +1895,7 @@ nav a{
 
 .section-4-image-walley{
     height: 100%;
-    min-height: 800px;
+    min-height: 700px;
     width: 100%;
     background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
     background-repeat: no-repeat;
@@ -1912,7 +1912,7 @@ nav a{
     .section-5-block{
         grid-area: section-5-block;
         display: grid;
-        grid-template-columns:1fr ;
+        grid-template-columns:1fr;
         grid-template-rows: auto auto;
         grid-template-areas: 
         "section-5-img"
@@ -2028,7 +2028,7 @@ nav a{
     nav a{
         color: rgb(160, 115, 102);
         text-decoration: none;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 600;
         letter-spacing: .5px;
     }
@@ -2069,13 +2069,13 @@ nav a{
     nav a{
         color: rgb(160, 115, 102);
         text-decoration: none;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 600;
         letter-spacing: .5px;
     }
 
     .nav-logo{
-        height: 20px;
+        height: 18px;
     }
 
     .navlink-5,.navlink-6,.navlink-7{
@@ -2101,7 +2101,6 @@ nav a{
         width: 90%;
         margin: 30px 0 0 0;
     }
-
 
     .portfolio-case-study-title{
         font-family: 'Anton', sans-serif;
@@ -2152,9 +2151,10 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px;
-        margin: 30px 0 60px 0;
+        padding: 60px 30px;
+        margin: 0;
         height: 60vh;
+        min-height: 700px;
         width: 100%;
     }
 
@@ -2194,7 +2194,7 @@ nav a{
         width: 100%;
         background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
         background-repeat: no-repeat;
-        background-size: 97%;
+        background-size: 90%;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
