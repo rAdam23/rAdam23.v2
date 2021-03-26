@@ -161,6 +161,7 @@ nav a:hover{
     border-radius: 5px;
     margin: 40px 0 0 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .page-button:hover {
@@ -864,7 +865,7 @@ nav a:hover{
     .page-grid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 100vh 90vh 100vh;
+        grid-template-rows: auto 100vh auto auto;
         grid-template-areas: 
         "landing-block"
         "ux-ui-block"
@@ -959,7 +960,7 @@ nav a:hover{
         font-size: 1rem;
         line-height: 1.6;
         font-weight: 400;
-        width: 280px;
+        width: 65%;
         margin: 20px 0 0 0;    
     }
     
@@ -1029,8 +1030,9 @@ nav a:hover{
         flex-direction: column;
         margin: 0 4vw;
         background-color: rgb(252, 240, 220); 
-        justify-content: flex-start;
-        padding: 120px 0;
+        justify-content: center;
+        padding: 0;
+        min-height: 660px;
     }
 
     .about-img-box{
@@ -1061,7 +1063,7 @@ nav a:hover{
         flex-direction: column;
         justify-content: center;
         background-color: rgb(233, 210, 182); 
-        min-height: 650px;
+        min-height: 600px;
     }
 
     .contact-section{
@@ -1185,13 +1187,24 @@ nav a:hover{
     height: 37vw;
     width: 37vw;
     background-color: rgb(248, 248, 248);
-    background-image: url(images/walleybanque-logo.svg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(71, 71, 71));
     border-radius: 10px;
     transform: translateZ(0);
+}
+
+.landing-walley{
+    background-image: url(images/walleybanque-portfolio-logo.svg);
+}
+
+.landing-rmit{
+    background-image: url(images/rmit-portfolio-logo.svg);
+}
+
+.landing-radam23{
+    background-image: url(images/radam23-portfolio-logo.svg);
 }
 
 .active-nav{
@@ -1276,7 +1289,7 @@ nav a:hover{
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 60px 0;
     margin: 0;
 }
 
@@ -1289,19 +1302,30 @@ nav a:hover{
     margin: 0;
 }
 
-.section-1-image-walley{
+.section-1-image{
     height: 100%;
     width: 100%;
-    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 0px;
     transform: translateZ(0);
 }
 
+.section-1-walley{
+    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
+    background-position: 50% 50%;
+}
 
+.section-1-rmit{
+    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-position: 70% 50%;
+}
+
+.section-1-radam23{
+    background-image: url(images/radam23-1-sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg);
+    background-position: 70% 50%;
+}
 
 
 /*< ============  SECTION 2 - PORTFOLIO    ===========================  >*/
@@ -1339,10 +1363,9 @@ nav a:hover{
     margin: 0;
 }
 
-.section-2-image-walley{
+.section-2-image{
     height: 80%;
     width: 80%;
-    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -1350,6 +1373,23 @@ nav a:hover{
     border-radius: 10px;
     transform: translateZ(0);
 }
+
+.section-2-walley{
+    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
+    background-position: 50% 50%;
+}
+
+.section-2-rmit{
+    background-image: url(images/rmit-2-annie-spratt-sggw4-qDD54-unsplash.jpg);
+    background-position: 10% 50%;
+    width: 75%;
+}
+
+.section-2-radam23{
+    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-position: 50% 50%;
+}
+
 
 
 /*< ============  SECTION 3 - PORTFOLIO    ===========================  >*/
@@ -1386,16 +1426,31 @@ nav a:hover{
     margin: 0;
 }
 
-.section-3-image-walley{
+.section-3-image{
     height: 80%;
     width: 80%;
-    background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 10px;
     transform: translateZ(0);
+}
+
+.section-3-walley{
+    background-image: url(images/walley-3-bantersnaps-5U_28ojjgms-unsplash.jpg);
+    background-position: 50% 50%;
+}
+
+.section-3-rmit{
+    background-image: url(images/rmit-3-gabriele-ribeiro-1razH7iMbQo-unsplash.jpg);
+    background-position: 10% 80%;
+    width: 75%;
+}
+
+.section-3-radam23{
+    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-position: 50% 50%;
 }
 
 
@@ -1435,16 +1490,34 @@ nav a:hover{
     margin: 0;
 }
 
-.section-4-image-walley{
+.section-4-image{
     height: 100%;
     width: 100%;
-    background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 0px;
 }
+
+
+.section-4-walley{
+    background-image: url(images/walley-4-robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg);
+    background-position: 50% 50%;
+}
+
+.section-4-rmit{
+    background-image: url(images/rmit-4-ross-sneddon-sWlDOWk0Jp8-unsplash.jpg);
+    filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%) contrast(96%) brightness(95%);
+    background-position: 10% 80%;
+}
+
+.section-4-radam23{
+    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-position: 50% 50%;
+}
+
+
 
 
 
@@ -1483,17 +1556,31 @@ nav a:hover{
     margin: 0;
 }
 
-.section-5-image-walley{
+.section-5-image{
     height: 80%;
     min-height: 700px;
     width: 80%;
-    background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 10px;
     transform: translateZ(0);
+}
+
+.section-5-walley{
+    background-image: url(images/walley-5-cristian-escobar-abkEAOjnY0s-unsplash.jpg);
+    background-position: 50% 50%;
+}
+
+.section-5-rmit{
+    background-image: url(images/rmit-5-florian-klauer-mk7D-4UCfmg-unsplash.jpg);
+    background-position: 50% 70%;
+}
+
+.section-5-radam23{
+    background-image: url(images/radam23-5-zane-lee-cTBVTxfhgic-unsplash.jpg);
+    background-position: 50% 50%;
 }
 
 
@@ -1532,16 +1619,32 @@ nav a:hover{
     margin: 0;
 }
 
-.section-6-image-walley{
+.section-6-image{
     height: 80%;
     width: 80%;
-    background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
     border-radius: 10px;
     transform: translateZ(0);
+}
+
+.section-6-walley{
+    background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
+    background-position: 50% 50%;
+}
+
+.section-6-rmit{
+    background-image: url(images/rmit-6-rmit-final-prototype-copyright-radam23.png);
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.section-6-radam23{
+    background-image: url(images/radam23-6-radam23-website-copyright-radam23.png);
+    background-position: 50% 50%;
+    background-size: 100%;
 }
 
 
