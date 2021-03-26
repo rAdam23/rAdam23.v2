@@ -96,6 +96,9 @@ nav a:hover{
     color: rgb(163, 34, 17);
 }
 
+.navlink-8,.navlink-9{
+    display: none;
+}
 
 /*< =======  LANDING SECTION DESKTOP  =======  >*/
 
@@ -1386,7 +1389,7 @@ nav a:hover{
 }
 
 .section-2-radam23{
-    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-image: url(images/radam23-2-priscilla-du-preez-BjhUu6BpUZA-unsplash.jpg);
     background-position: 50% 50%;
 }
 
@@ -1449,7 +1452,7 @@ nav a:hover{
 }
 
 .section-3-radam23{
-    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-image: url(images/radam23-3-annie-spratt-gSQbip5HHuc-unsplash.jpg);
     background-position: 50% 50%;
 }
 
@@ -1513,8 +1516,8 @@ nav a:hover{
 }
 
 .section-4-radam23{
-    background-image: url(images/rmit-1-charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
-    background-position: 50% 50%;
+    background-image: url(images/radam23-4-aaron-samuel-u5-nRmM3aY4-unsplash.jpg);
+    background-position: 100% 50%;
 }
 
 
@@ -1626,32 +1629,35 @@ nav a:hover{
     background-size: cover;
     background-position: 50% 50%;
     filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
-    border-radius: 10px;
     transform: translateZ(0);
 }
 
 .section-6-walley{
     background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
     background-position: 50% 50%;
+    border-radius: 10px;
 }
 
 .section-6-rmit{
     background-image: url(images/rmit-6-rmit-final-prototype-copyright-radam23.png);
     background-position: 50% 50%;
     background-size: contain;
+    border-radius: 10px;
 }
 
 .section-6-radam23{
     background-image: url(images/radam23-6-radam23-website-copyright-radam23.png);
     background-position: 50% 50%;
     background-size: 100%;
+    border-radius: 0px;
 }
 
 
 @media only screen and (max-width: 1423px) {
 
-    .section-6-image-walley{
+    .section-6-walley{
         background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-position: 50% 50%;
         background-size: 430px;
     }
 
@@ -1662,7 +1668,7 @@ nav a:hover{
         align-items: flex-start;
         flex-direction: column;
         padding: 0;
-        margin: 5vw 5vw 5vw 0;
+        margin: 5vw ;
     }
     
 }
@@ -1695,7 +1701,6 @@ nav a:hover{
     width: 90%;
     margin: 30px 0 0 0;
 }
-
 
 .portfolio-case-study-title{
     font-family: 'Anton', sans-serif;
@@ -1794,7 +1799,6 @@ nav a{
     min-width: 400px;
     max-width: 490px;
     background-color: rgb(248, 248, 248);
-    background-image: url(images/walleybanque-logo.svg);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: 50% 50%;
@@ -1803,6 +1807,17 @@ nav a{
     transform: translateZ(0);
 }
 
+.landing-walley{
+    background-image: url(images/walleybanque-portfolio-logo.svg);
+}
+
+.landing-rmit{
+    background-image: url(images/rmit-portfolio-logo.svg);
+}
+
+.landing-radam23{
+    background-image: url(images/radam23-portfolio-logo.svg);
+}
 
 /*< ============  SECTION 1 - PORTFOLIO    ===========================  >*/
 
@@ -1842,11 +1857,10 @@ nav a{
     width: 100%;
 }
 
-.section-1-image-walley{
+.section-1-image{
     height: 100%;
     min-height: 700px;
     width: 100%;
-    background-image: url(images/walley-1-melb-walkway-copyright-radam23.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -1893,11 +1907,10 @@ nav a{
     width: 100%;
 }
 
-.section-2-image-walley{
+.section-2-image{
     height: 100%;
     min-height: 700px;
     width: 100%;
-    background-image: url(images/walley-2-EDITED\ victor-xok-BHNVH_Ov9P8-unsplash\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 43% 50%;
@@ -1944,7 +1957,7 @@ nav a{
         width: 100%;
     }
     
-    .section-3-image-walley{
+    .section-3-image{
         height: 100%;
         min-height: 700px;
         width: 100%;
@@ -1996,7 +2009,7 @@ nav a{
     width: 100%;
 }
 
-.section-4-image-walley{
+.section-4-image{
     height: 100%;
     min-height: 700px;
     width: 100%;
@@ -2048,7 +2061,7 @@ nav a{
         width: 100%;
     }
     
-    .section-5-image-walley{
+    .section-5-image{
         height: 100%;
         min-height: 700px;
         width: 100%;
@@ -2099,16 +2112,14 @@ nav a{
         width: 100%;
     }
     
-    .section-6-image-walley{
+    .section-6-image{
         height: 100%;
         min-height: 700px;
         width: 100%;
-        background-image: url(images/walley-6-walleybanque-app-copyright-radam23png.png);
+        margin: 0 5vw;
         background-repeat: no-repeat;
-        background-size: 130%;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
-        border-radius: 10px;
         transform: translateZ(0);
     }
     
@@ -2140,18 +2151,36 @@ nav a{
         height: 20px;
     }
 
-    .section-6-image-walley{
-        height: 100%;
-        min-height: 900px;
-        width: 100%;
-        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+    .section-6-image{
+        height: 55vw;
+        min-height: 400px;
+        width: 90%;
+        margin: 0 5vw;
         background-repeat: no-repeat;
         background-size: 600px;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
-        border-radius: 10px;
         transform: translateZ(0);
     }
+
+    .section-6-walley{
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        border-radius: 10px;
+    }
+
+    .section-6-rmit{
+        background-image: url(images/rmit-6-rmit-final-prototype-copyright-radam23.png);
+        background-position: 0% 50%;
+        background-size: 100%;
+    }
+    
+    .section-6-radam23{
+        background-image: url(images/radam23-6-radam23-website-copyright-radam23.png);
+        background-position: 50% 50%;
+        background-size: 100%;
+    }
+
+
 }
     
 
@@ -2160,11 +2189,14 @@ nav a{
 
     @media only screen and (max-width: 696px) {
 
+    .navlink-8,.navlink-9{
+        display: flex;
+    }
 
     nav ul{
         display: flex;
         flex-direction: row;
-        width: 80px;
+        width: fit-content;
         justify-content: flex-end;
         align-items: center;
     }
@@ -2181,7 +2213,7 @@ nav a{
         height: 20px;
     }
 
-    .navlink-5,.navlink-6,.navlink-7{
+    .navlink-4,.navlink-5,.navlink-6,.navlink-7{
         display: none;
     }
 
@@ -2240,7 +2272,6 @@ nav a{
         min-width: 200px;
         max-width: 570px;
         background-color: rgb(248, 248, 248);
-        background-image: url(images/walleybanque-logo.svg);
         background-repeat: no-repeat;
         background-size: 300px;
         background-position: 50% 50%;
@@ -2256,14 +2287,13 @@ nav a{
         justify-content: center;
         padding: 0 5vw;
         margin: 60px 0 60px 0;
-        height: 55vh;
-        min-height: 300px;
-        max-height: 400px;
+        height: 50vh;
         width: 100%;
     }
 
-    .section-1-image-walley,.section-2-image-walley,.section-3-image-walley,.section-4-image-walley,.section-5-image-walley{
+    .section-1-image,.section-2-image,.section-3-image,.section-4-image,.section-5-image{
         min-height: 300px;
+        max-height: 500px;
     }
 
     .section-6-block{
@@ -2275,7 +2305,7 @@ nav a{
         "section-6-img" 
         "section-6-content";
         background-color: rgb(224, 201, 178); 
-        padding: 5vw;
+        padding: 0 5vw;
         justify-content: center;
         align-items: center;
     }
@@ -2285,18 +2315,16 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 60px 0;
         margin: 0;
         height: auto;
         width: 100%;
     }
     
-
-    .section-6-image-walley{
+    .section-6-image{
         height: 100%;
-        min-height: 140vw;
         width: 100%;
-        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        min-height: 450px;
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: 50% 50%;
@@ -2304,6 +2332,29 @@ nav a{
         border-radius: 10px;
         transform: translateZ(0);
     }
+
+    .section-6-walley{
+        background-image: url(images/walley-6-mobile-Walleybanque-App-\(mobile\)-copyright-rAdam23.png);
+        background-position: 50% 50%;
+        min-height: auto;
+
+    }
+    
+    .section-6-rmit{
+        background-image: url(images/rmit-6-rmit-final-prototype-copyright-radam23.png);
+        background-position: 0% 50%;
+        background-size: 700px;
+        border-radius: 0px;
+    }
+    
+    .section-6-radam23{
+        background-image: url(images/radam23-6-radam23-website-copyright-radam23.png);
+        background-position: 0% 50%;
+        background-size: 700px;
+        border-radius: 0px;
+    }
+    
+
 
 }
 
