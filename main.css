@@ -2115,6 +2115,7 @@ nav a{
     .section-6-image{
         height: 100%;
         min-height: 700px;
+        background-size: 70%;
         width: 100%;
         margin: 0 5vw;
         background-repeat: no-repeat;
@@ -2153,11 +2154,11 @@ nav a{
 
     .section-6-image{
         height: 55vw;
-        min-height: 400px;
+        min-height: 660px;
         width: 90%;
         margin: 0 5vw;
         background-repeat: no-repeat;
-        background-size: 600px;
+        background-size: 450px;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         transform: translateZ(0);
@@ -2315,18 +2316,18 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 60px 0;
-        margin: 0;
-        height: auto;
-        width: 100%;
+        padding: 0 0;
+        margin: 20vw 0;
+        height: 140vw;
+        width: 100vw;
     }
     
     .section-6-image{
         height: 100%;
         width: 100%;
-        min-height: 450px;
+        min-height: auto;
         background-repeat: no-repeat;
-        background-size: 90%;
+        background-size: 100%;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
