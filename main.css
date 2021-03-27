@@ -2319,7 +2319,7 @@ nav a{
         padding: 0 0;
         margin: 20vw 0;
         height: 140vw;
-        width: 100vw;
+        width: 100%;
     }
     
     .section-6-image{
@@ -2327,7 +2327,7 @@ nav a{
         width: 100%;
         min-height: auto;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 120%;
         background-position: 50% 50%;
         filter: drop-shadow(7px 10px 10px rgb(19, 5, 12))saturate(110%);
         border-radius: 10px;
