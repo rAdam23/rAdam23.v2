@@ -1935,7 +1935,7 @@ li a:hover{
     }
     
     .sml-nav li{
-        padding: 0 0 0 5vw;
+        padding: 0 0 0 20px;
     }
 
     .sml-nav a{
@@ -1963,7 +1963,7 @@ li a:hover{
     }
 
     .nav-link-12{
-        margin:  0 5vw;
+        margin:  0 25px;
         border-bottom-color: black;
         border-bottom-width: 2px;
         border-bottom-style: solid;
