@@ -8,111 +8,167 @@
     <!-- VIEWPORT --------------->    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- STYLESHEET --------------->    
+    <!-- CSS STYLESHEET --------------->    
     <link rel="stylesheet" href="main.css"> 
 
-    <!-- FONTS --------------->    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS --------------->    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- APPLE ICONS --------------->    
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" /> 
-
+    
     <!-- FAVICON --------------->    
-    <link rel="icon" href="images/radam23-favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="zapstack-favicon.svg" sizes="any" type="image/svg+xml">
 
     <!-- TITLE --------------->    
     <title>rAdam23</title>
+
 </head>
 
 <body>
 
-<section class="main-grid">
 
+<div class="container">
 
-<!-------------------    NAV   ------------------------------------------------>
-
-<nav>
-    <a href="index.html"><img src="images/logo.png" class="nav-logo"></a>
-</nav>
-
-
-<div class="nav-link-bar">
-    <ul>
-        <li><a href="index.html" class="active-nav-link">Home</a></li>
-        <li><a href="walleybanque.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
-
-<!-------------------   NAV (MOBILE)  ------------------------------------------>
-
-<div class="mobile-nav-links">
-    <a href="walleybanque.html" class="portfolio-nav-btn">Portfolio &#x2192;</a>
-    <ul>
-        <li><a href="index.html" class="active-nav-link">Home</a></li>
-        <li><a href="walleybanque.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
-
-
-<!-------------------   CONTENT PANEL   --------------------------------------->
-
-<div class="main-panel">
-
-    <div class="main-content-container">
-
-        <h1 class="lrg-text-heading">Full Stack<br>Web Designer<br>Melbourne.</h1>
-        <h2 class="sml-text-heading">A Melbourne-based full stack web designer, who creates websites and loves to create amazing custom UX/UI experiences.</h2>
-        <a href="contact.html" class="page-button">Find out more</a>
-
-    </div>
-</div>
-
-
-<ul class="links">
-    <li class="contact-btn"><a href="contact.html">contact</a></li>
-    <li class="portfolio-btn"><a href="walleybanque.html">portfolio</a></li>
-</ul>
-
-
-<div class="body-img"></div>
-
-
-<!-------------------   ABOUT ME PANEL (MOBILE)   ------------------------------->
-
-<div class="about-panel">
-
-    <div class="about-content-container">
-
-        <h1 class="lrg-text-heading about-text">About me</h1>
-        <h2 class="sml-text-heading about-text">I like to create websites that are fully customised, designed and coded end-to-end using semantic code & best practices.</h2>
-        <a href="walleybanque.html" class="about-button">Find out more</a>
-    </div>
-</div>
-
-<!-------------------   CONTACT PANEL (MOBILE)   --------------------------------------->
-
-<div class="contact-panel">
-
-    <div class="contact-content-container">
-
-        <h1 class="lrg-text-heading">Contact me</h1>
-        <h2 class="sml-text-heading">I'm always eager to discuss new projects and ideas from entrepeneurs, startups or mature businesses. Contact me today to see how I can help you with a custom website, user experience or design solution.</h2>
-        <ul class="contact-btn-list">
-            <li><a href="https://twitter.com/radam23official" class="page-button" target="_blank"><img src="images/twitter-icon.svg" class="twitter-icon">Send a tweet</a></li>
-            <li><a href="https://facebook.com/radam23official"  class="page-button"><img src="images/facebook-icon.svg" class="facebook-icon">Let's be friends</a></li>
-            <li><a href="walleybanque.html"  class="page-button"><img src="images/mail-icon.svg" class="mail-icon">Email me</a></li>
+    <!-- NAVBAR --------------->    
+    <nav>
+        <a href="index.html" class="logo">RADAM23</a>
+        <ul>
+            <li><a class="active-nav-link">Home</a></li>
+            <li><a href="walley.html">Design Portfolio</a></li>
+            <li><a>Contact</a></li>
         </ul>
+    </nav>
+
+     <!-- SML NAV ------------>
+
+     <nav class="sml-nav">
+        <a href="index.html" class="sml-logo">RADAM23</a>
+        <ul>
+            <li class="nav-link-9"><a href="index.html">Home</a></li>
+            <li class="nav-link-10"><a href="walley.html" class="active-nav-link">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    
+    <!-- LANDING --------------->  
+    <div class="landing landing-home">
+    <h1 class="title-txt">Full-stack</h1>
+        <h1 class="title-txt margin-top">Web Designer</h1>
+        <h1 class="title-txt margin-top">Melbourne</h1>
+        <a href="walley.html" class="link-button"><h2 class="link-button-text">Find out more ></h2></a>
+    </div>
+
+
+
+<!-- DESIGN PORTFOLIO SECTION ---------------------------------->  
+
+    <div class="portfolio-grid-home">
+    
+        <div class="section-title-block">
+            <h1 class="section-title-text">Design Portfolio</h1>
+        </div>
+
+
+
+        <div class="tile tile-1">
+            <div class="tile-img img-walley"></div>
+            <div class="tile-content">
+                <h4 class="tile-title">Walleybanque</h4>
+                <h5 class="tile-text">Walleybanque is a French neo-bank startup seeking a complete redesign of their UX and UI for their banking app.</h5>
+            </div>
+
+        </div>
+
+        <div class="tile tile-2">
+            <div class="tile-img img-rmit"></div>
+            <div class="tile-content">
+                <h4 class="tile-title">Rmit university</h4>
+                <h5 class="tile-text">RMIT University is a leading design and arts University in Australia requiring a redesign of their student portal.</h5>
+            </div>
+
+        </div>
+
+        <div class="tile tile-3">
+            <div class="tile-img img-radam"></div>
+            <div class="tile-content">
+                <h4 class="tile-title">Radam23</h4>
+                <h5 class="tile-text">rAdam23 is my personal portfolio website which I provided my full stack design experience in coding, UX and UI design.</h5>
+            </div>
+
+        </div>
+
+
+        <div class="tile tile-4">
+            <div class="tile-img img-hsbc"></div>
+            <div class="tile-content coming-soon">
+                <h4 class="tile-title">Hsbc (Coming Soon)</h4>
+                <h5 class="tile-text">HSBC Bank provides global banking services to Australian clients. I am curently working on a case study for the bank.</h5>
+            </div>
+
+        </div>
+
+
+        <div class="tile-5">
+            <div class="tile-content">
+                <a href="walley.html"><h4 class="tile-next-text">View the projects ></h1></a>
+            </div>
+
+        </div>
+
 
     </div>
+
+    
+<!-- CONTACT GRID SECTION ----------------------------------> 
+
+    <div class="contact-grid-home">
+
+        <div class="section-title-block">
+            <h1 class="section-title-text">Contact me</h1>
+        </div>
+
+        <div class="contact-content">
+            <h5 class="contact-text">
+            Want to discuss a future project or idea? Contact me below on social media or email to talk futher. I create custom beautiful websites on demand designed and crafted end to end in Melbourne by myself. <br><br>Please contact via email to discuss pricing and availability today.</h5>        
+
+            <h1 class="social-link-button margin-top-contact">facebook</h1>
+            <h1 class="social-link-button">twitter: @rAdam23Official</h1>
+            <h1 class="social-link-button">hiradam23@gmail.com</h1>
+
+        </div>
+
+        <div class="contact-img"></div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-</section>
+
+
+
+
+
+
+
+
 
 </body>
 
