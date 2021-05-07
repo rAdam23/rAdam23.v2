@@ -2020,8 +2020,8 @@ li a:hover{
 
     .walley-tile6{
         background-color: #cccccc;
-        height: 50vh;
-        background-size: 28vh;
+        height: 55vh;
+        background-size: 320px;
         min-height: 500px;
     }
 
@@ -2284,7 +2284,12 @@ li a:hover{
     }
 
 
-    .walley-tile1, .walley-tile2, .walley-tile3, .walley-tile4, .walley-tile5, .walley-tile6, .final-product {
+    .walley-tile1, .walley-tile2, .walley-tile3, .walley-tile4, .walley-tile5, .final-product {
         height: 45vh;
         min-height: 80vw;
 }
+
+    .walley-tile6{
+        height: 55vh;
+        background-size: 78vw;
+    }
